@@ -1,6 +1,7 @@
+*~
+_site
 *.pyc
 .project
 .pydevproject
 *.*~
-_site
-*~
+
