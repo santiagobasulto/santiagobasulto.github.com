@@ -12,11 +12,12 @@ Este blog ha mutado demasiado ya.
 
 Lo importante es que este sitio me ayuda mantener mi blog, un lugar para esparcir mis pensamientos por internet y compartirlos publicamente. Podés verlo [acá](/archive.html)
 
-**Importante: Soy encargado de la documentación en español del lenguaje de programación Scala, si estás interesado en participar podés escribir. **
+**Importante: Si querés participar en el desarrollo de la documentación oficial de Scala en español escribime. **
 
 {% assign first_post = site.posts.first %}
 
-# Último Post: {{ first_post.title | truncatewords: 25 }} #
+<h1><small>Último Post</small></h1>
+# {{ first_post.title | truncatewords: 25 }}
 
 {{ first_post.content | truncatewords: 250 }}
 

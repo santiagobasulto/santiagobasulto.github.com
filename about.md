@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Santiago Basulto | Contacto
+title: Santiago Basulto | Sobre Mi
 ---
 
-# Contacto
+# Sobre mi
 
 <br />
 
@@ -23,4 +23,4 @@ Además:
 * [GitHub](http://github.com/santiagobasulto)
 * [LinkedIn](http://www.linkedin.com/in/santiagobasulto)
 * [Stack Overflow](http://stackoverflow.com/users/198212/santiagobasulto)
-
+* [Facebook](http://www.facebook.com/santiago.basulto)
