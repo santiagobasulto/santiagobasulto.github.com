@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Josh Suereth
+title: Santiago Basulto | Blog
 ---
 
 # Todos los posts #
