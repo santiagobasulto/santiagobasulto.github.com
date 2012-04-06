@@ -10,9 +10,9 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              <li><a href="archive.html">Blog</a></li>
-              <li><a href="about.html">Sobre mi</a></li>
-              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="/archive.html">Blog</a></li>
+              <li><a href="/about.html">Sobre mi</a></li>
+              <li><a href="/contact.html">Contacto</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
