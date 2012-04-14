@@ -62,7 +62,7 @@ tags: git tutorial español vcs mercurial hg
 *   19\. [Obtené la versión original para Kindle](#version-original-kindle)
 *   20\. [Preguntas y comentarios](#preguntas-comentarios)
 *   21\. [Links  y recursos útiles](#links-recursos-utiles)
-     
+
 <h2 id="Git">1. Git</h2>
 <h3 id="que-es-git">1.1. ¿qué es Git?</h3>
 
@@ -265,7 +265,7 @@ A continuación utilizaremos comandos que te ayudarán a ver el estado actual de
 
     # Muestra una linda vista gráfica de los cambios
     gitk --all
-{% highlight %}
+{% endhighlight %}
 
 <h3 id="correccion-mensajes-commit-git-amend">4.5. Corrección de mensajes de commit - git amend</h3>
 
