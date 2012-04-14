@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: Scala para refugiados de Java - Parte 1
 category: scala
 tags: scala java programming tutorial
 ---
