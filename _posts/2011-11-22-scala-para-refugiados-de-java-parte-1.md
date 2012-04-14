@@ -29,14 +29,14 @@ Si vos sos como yo y te podes identificar con lo anterior, entonces estas series
 object HelloWorld extends Application {
   println("Hello, World!")
 }
-{% highlight %}
+{% endhighlight %}
 
 Nada mejor que empezar con un poco de código. Notá lo refrescante de no tener que incluir puntos y coma obligatoriamente. Es posible usarlos si queremos, pero no son necesarios salvo que necesitemos múltiples sentencias en una sola linea. Este código hace exactamente lo que parece, define una aplicación la cual (cuando se ejecuta mediante el intérprete de Scala) imprimirá “Hello, World!” a stdout (la salida del intérprete). Si ponés este código en un archivo con la extensión .scala, después podés compilarlo usando el compilador scalac. El resultado será un solo archivo .class. Tecnicamente sería posible ejecutar el archivo .class usando el intérprete de Java, pero sería necesario hacer algunos arreglos al classpath. Lo más fácil es usar el comando scala de la siguiente manera:
 
 {% highlight bash %}
 scalac hello.scala
 scala HelloWorld
-{% highlight %}
+{% endhighlight %}
 
 ¿Notás el nombre del archivo en cuestión? A diferencia de Java, Scala no nos fuerza a definir todas las clases públicas individualmente en archivos con el mismo nombre. De hecho, Scala te deja definir tantas clases como quieras por archivo (como en C++ o Ruby). De todas maneras sigue siendo una buena práctica seguir las convenciones de nombres de Java, por lo tanto siendo buenos programadores guardaremos nuestro ejemplo HelloWorld en un archivo llamado HelloWorld.scala.
 
@@ -69,14 +69,14 @@ object HelloWorld2 {
     println(greeting)
   }
 }
-{% highlight %}
+{% endhighlight %}
 
 Guardá esto en un archivo nuevo (lo llamaremos “HelloWorld2.scala”), compilalo y ejecutalo utilizando los siguientes comandos:
 
 {% highlight bash %}
 scalac HelloWorld2.scala
 scala HelloWorld2
-{% highlight %}
+{% endhighlight %}
 
 Una vez más se imprime “Hello, World!” a stdout. De todas maneras esta vez hicimos las cosas un tanto diferentes. Ahora incluímos argumentos de la consola de comando en nuestra aplicación. Definimos una variable de tipo String, iteramos sobre un array y hacemos un poco de manipulación de String. Bastante sencillo, pero definitivamente más complejo que el primer ejemplo. (Nota: Los expertos en Scala sin dudas sugerirán el uso de Array#deepMkString(String) (similar al método Array::join de Ruby) en lugar de iterar sobre el array. Este es el enfoque correcto, pero quería ilustrar un poco más del lenguaje que solo características oscuras de la API).
 
@@ -92,19 +92,19 @@ Mediante una inspección más profunda de nuestro ejemplo, vamos a comprender un
 
 {% highlight scala %}
 def main(args:Array[String]) = {
-{% highlight %}
+{% endhighlight %}
 
 En este caso, args es un parámetro del método del tipo Array[String]. Por lo tanto podemos decir que args es un array de Strings (un vector o arreglo que contiene cadenas de caracteres). En Scala, Array es realmente una clase (a diferencia de los arrays de Java) que toma un parámetro de tipo para definir el tipo de sus elementos. La sintaxis de Java equivalente (asumiendo que Java tuviera una clase Array) sería algo como:
 
 {% highlight java %}
 public static void main(Array<String> args) {
-{% highlight %}
+{% endhighlight %}
 
 En Scala, el tipo de una variable es especificado con la sintaxis variable:Tipo. Así, si quisera declarar una variable explicitamente del tipo Int, lo haría de la siguiente manera:
 
 {% highlight scala %}
 var myInteger:Int
-{% highlight %}
+{% endhighlight %}
 
 Si mirás el ejemplo, de hecho declaramos una variable de tipo String. Sin embargo, no especificamos explicitamente ningún tipo. Esto es así porque estamos aprovechando el mecanismo de inferencia de tipos de Scala. Estas dos declaraciones son semanticamente equivalentes:
 
@@ -112,7 +112,7 @@ Si mirás el ejemplo, de hecho declaramos una variable de tipo String. Sin embar
 var greeting = ""
 
 var greeting:String = ""
-{% highlight %}
+{% endhighlight %}
 
 En la primer declaración es obvio para nosotros que greeting es un String, por lo tanto el compilador es capaz de inferirlo por nosotros. Ambas variables greeting son chequeadas estaticamente, la primera es solamente 7 caracteres más corta.
 
@@ -120,7 +120,7 @@ Programadores observadores también se daran cuenta de que no hemos declarado el
 
 {% highlight scala %}
 def main(args:Array[String]):Unit = {
-{% highlight %}
+{% endhighlight %}
 
 Una vez más, el tipo está por delante del elemento, delimitado por el caracter dos puntos. Un comentario, en Scala, Unit es un tipo para situaciones tipo no-me-importa-qué-retorno. Podés pensarlo como Object y void de Java juntos en una sola estructura.
 
@@ -130,7 +130,7 @@ var greeting = ""
 for (i <- 0 until args.length) {
   greeting += (args(i) + " ")
 }
-{% highlight %}
+{% endhighlight %}
 
 Por cierto, no vale la pena notar por el momento que la convención para identar en Scala es dos espacios, a diferencia de los tabs o cuatro espacios tan comunes en Java. La identación no es significante, por lo tanto podés hacer las cosas como más te gusten, pero las otras cuatro mil millones, noventa y nueve millones, novecientos noventa y nueve mil, novecientos noventa y nueve personas en el mundo usan dos espacios como convencion, por lo tanto tal vez es una buena idea empezar a usarlos.La lógica detras de esta convención es que las estructuras profundamente anidadas no son un mal signo en Scala, como lo son en Java, por eso este tipo de identación puede ser más acorde.
 
@@ -140,14 +140,14 @@ Este ejemplo de código es un poco menos obvio que los anteriores. Primero comen
 for i in 0..(args.size - 1)
       greeting += args[i] + " "
     end
-{% highlight %}
+{% endhighlight %}
 
 La clave del bucle for en Scala es la instancia de Range creada por el método RichInt#until. Podemos partir esta sintaxis en diferentes sentencias así:
 
 {% highlight scala %}
 val range = 0.until(args.length)
 for (i <- range) {}
-{% highlight %}
+{% endhighlight %}
 
 Ah, el usar val en lugar de var no es un error de tipeo. Cuando usamos val estamos declarando la variable range como una constante (en el sentido de Java, no de C/C++). Pensalo como una forma más corta del modificador final de Java.
 
@@ -159,7 +159,7 @@ En resumen, el for mostrado es casi, pero no completamente equivalente al siguie
 
 {% highlight java %}
 for (int i = 0; i < args.length; i++) {
-{% highlight %}
+{% endhighlight %}
 
 Obviamente la sintaxis Java está definiendo explicitamente la evaluación del rango sobre el cual itera, en vez de usar algún tipo de objeto Range, pero el punto sigue siendo válido. Afortunadamente, no vas a tener que usar mucho esta sintaxis de bucles en Scala, como veremos en un momento.
 
@@ -177,7 +177,7 @@ String greeting = "";
 for (int i = 0; i < args.length; i++) {
     greeting += args[i] + " ";
 }
-{% highlight %}
+{% endhighlight %}
 
 ## Una mejor forma para iterar
 
@@ -187,7 +187,7 @@ En Java 5 vimos la introducción del llamado bucle for/each. Por lo tanto en Jav
 for (String arg : args) {
     greeting += arg + " ";
 }
-{% highlight %}
+{% endhighlight %}
 
 Mucho más conciso. Scala tiene una sintaxis similar definida como una función de alto nivel (una función la cual toma otra función como parámetro). Hablaré más sobre esto en un rato, pero por el momento podés considerarlo más polvo mágico de hadas:
 
@@ -195,7 +195,7 @@ Mucho más conciso. Scala tiene una sintaxis similar definida como una función 
 args.foreach { arg =>
   greeting += (arg + " ")
 }
-{% highlight %}
+{% endhighlight %}
 
 Aquí vemos que foreach es un método de la clase Array que toma una closure (una función anónima) como parámetro. El método foreach después invoca esa closure una vez por cada elemento, pasando el elemento como un parámetro para esa closure (arg). El parámetro arg tiene un tipo inferido String porque estamos iterando sobre un array de Strings.
 
@@ -205,13 +205,13 @@ Como vimos antes, los métodos en Scala pueden ser invocados de diversas formas.
 args.foreach(arg => {
   greeting += (arg + " ")
 })
-{% highlight %}
+{% endhighlight %}
 
 Scala de hecho define una forma aun más concisa para definir closure en una linea. Podemos omitir todas las llaves al mover la instrucción a la invocación del método
 
 {% highlight scala %}
 args.foreach(arg => greeting += (arg + " "))
-{% highlight %}
+{% endhighlight %}
 
 Nada mal! Entonces, nuestro ejemplo completamente re escrito queda así:
 
@@ -225,7 +225,7 @@ object HelloWorld2 {
     println(greeting)
   }
 }
-{% highlight %}
+{% endhighlight %}
 
 La sintaxis luce genial, pero ¿qué es lo que realmente está haciendo? No se vos, pero yo odio usar APIs que no se cómo implementarlas yo mismo. Con un poco de trabajo, podemos comprender el método foreach de Scala con un póco de código puro de Java. Asumamos por un momento que Java tiene una clase Array. En esa clase, pretendamos que existe un mètodo foreach el cual recibe una sola instancia como parámetro. En código queda algo así:
 
@@ -242,7 +242,7 @@ public class Array<T> {
         }
     }
 }
-{% highlight %}
+{% endhighlight %}
 
 Podría haber definido el foreach de forma recursiva (como está definido en Scala), pero acordate que estoy tratando de mantener estas explicaciones libres de las complicaciones de la programación funcional.
 
@@ -264,7 +264,7 @@ public class HelloWorld2 {
     System.out.println(greeting.toString());
     }
 }
-{% highlight %}
+{% endhighlight %}
 
 ¿Comenzás a ver por qué Scala es realmente atractivo? Si sos como yo, querés que Scala sea más conciso que Java. En este caso es exactamente lo que conseguimos. Nada de funcional, ni inmutabilidad. Solo código sólido y trabajado.
 
