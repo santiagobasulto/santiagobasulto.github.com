@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Scala para refugiados de Java - Parte 1
+title: "Scala para refugiados de Java - Parte 1: main(String[])"
 category: scala
 tags: scala java programming tutorial
 ---
 
-> Este es un tutorial de Scala para gente con conocimientos de Java. Es una traducción literal de las series homónimas de Daniel Spiewak, con expresa autorización del autor. Para acceder al contenido original: http://www.codecommit.com/blog/scala/scala-for-java-refugees-part-1
+>Este es un tutorial de Scala para gente con conocimientos de Java. Es una traducción literal de las series homónimas de [Daniel Spiewak](http://twitter.com/#!/djspiewak), con expresa autorización del autor. Accedé al [contenido original](http://www.codecommit.com/blog/scala/scala-for-java-refugees-part-1).
 
 Vos sabés quién sos. Sos el desarrollador que eligió Java unos años atras, tal vez como un segundo lenguaje y una mejor alternativa a C++, tal vez como el primer lenguaje al ingresar a la industria. Estás cómodo con Java, conocés sus entradas y salidas, sus formas. Es como una vieja novia; tal vez no sentís la vibración de siempre, pero sabes cómo acariciarla para que sonría. En resumen, sos un artesano y Java es tu animal de carga, tu caballo de batalla.
 
