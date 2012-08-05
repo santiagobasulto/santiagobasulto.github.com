@@ -5,7 +5,7 @@ category: scala
 tags: scala programming pattern matching expresiones
 ---
 
-Este es un post bastante colgado, ya que no he escrito mucho sobre Scala más allá del [Tutorial de Scala para programadores Java]({% post_url 2011-11-20-scala-para-refugiados-de-java-resumen %}). Lo que quiero comentar aquí son dos características muy útiles que resultan sorprendentes y que hacen a Scala uno de los lenguajes más *concisos* que conozco. Un comentario aparte de esto es que, en mi opinión, Scala rompe con el paradigma de que los lenguajes de tipado estático son poco concisos y que requieren mucho código redundante. Veamos por qué.
+Este es un post bastante colgado, ya que no he escrito mucho sobre Scala más allá del [Tutorial de Scala para programadores Java](http://google.com?2011-11-20-scala-para-refugiados-de-java-resumen). Lo que quiero comentar aquí son dos características muy útiles que resultan sorprendentes y que hacen a Scala uno de los lenguajes más *concisos* que conozco. Un comentario aparte de esto es que, en mi opinión, Scala rompe con el paradigma de que los lenguajes de tipado estático son poco concisos y que requieren mucho código redundante. Veamos por qué.
 
 Supongamos que estamos utilizando Scala para construir una Calculadora básica (saco el ejemplo de la [Scala School de Twitter](http://twitter.github.com/scala_school/). Para escribir nuestra calculadora vamos a pedir que en el constructor se especifique la marca. A su vez, de acuerdo a la marca vamos a asignar un color específico (muy subjetivo). Este ejemplo no tiene mucha utilidad, pero seguramente te has topado con algo así en tu vida de programador y sabés a lo que me refiero.
 
@@ -29,7 +29,7 @@ class Calculadora(marca: String) {
 }
 {% endhighlight%}
 
-Si no entendiste mucho del ejemplo anterior podés comenzar con el [Tutorial básico de Scala]({% post_url 2011-11-20-scala-para-refugiados-de-java-resumen %}).
+Si no entendiste mucho del ejemplo anterior podés comenzar con el [Tutorial básico de Scala](http://google.com?2011-11-20-scala-para-refugiados-de-java-resumen).
 
 El código anterior aparte de ser feo, sufre de problemas de **legibilidad**, **falta de brevedad**, y sobretodo se torna **inmantenible**. Otra falencia importante es que no podemos utilizar los tan bien ponderados `val`s de Scala, o sea, valores inmutables. Por ejemplo, otro gran problema: escribimos `color` 5 veces!!! Eso es sin lugar a dudas código redundante. Como todo, cuantas más veces se repita algo, mayor es la probabilidad de cometer un error. En alguna de las 5 veces que escribimos `color` nos pudimos haber equivocado.
 
@@ -63,7 +63,7 @@ Primero que nada notá el `val` que precede a `color`. Eso indica que `color` se
 
 Lo segundo interesante ahora es que de alguna forma asignamos el resultado del `if-else` al valor de `color`. Esto es así, literalmenete se produce la asignación del resultado del la sentencia condicional `if-else`. Esta es una de las cosas que hacen a Scala orientado a las expresiones.
 
-Esto significó una gran mejora de nuestro código. Primero porque pudimos utilizar variables inmutables, segundo porque hace nuestro código más legible, y tercero porque no va a haber lugar a errores. 
+Esto significó una gran mejora de nuestro código. Primero porque pudimos utilizar variables inmutables, segundo porque hace nuestro código más legible, y tercero porque no va a haber lugar a errores.
 
 De todas maneras existe una mejora más que podemos realizar. Como en el primer ejemplo, donde repetimos 5 veces **color**, en el anterior repetimos 3 veces **marca**. Para conseguir simplificar esto podemos utilizar el **pattern matching** o reconocimiento de patrones. Podemos  Si querés leer más podes dirigirte al [Tour de Scala](http://docs.scala-lang.org/es/tutorials/tour/pattern-matching.html) (y de paso si encontrás algún error en la traducción me contás).
 

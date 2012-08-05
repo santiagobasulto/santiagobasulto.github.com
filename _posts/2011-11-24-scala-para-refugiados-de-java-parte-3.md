@@ -12,7 +12,7 @@ tags: scala java programming tutorial
 
 > Este tutorial es el tercero de una serie. Podés acceder al anterior mediante el siguiente [link](/scala/2011/11/23/scala-para-refugiados-de-java-parte-2.html)
 
-En esta serie de tutoriales, ya hemos inspeccionado los fundamentos de la [sintaxis de Scala]({% post_url 2011-11-22-scala-para-refugiados-de-java-parte-1 %}) como también una aproximación de cómo funciona la [orientación a objetos]({% post_url 2011-11-23-scala-para-refugiados-de-java-parte-2 %}). De todas maneras, no hemos visto ninguno de estos temas en mayor profundidad. La mayoría de nuestros esfuerzos se han concentrado en vistazos a un nivel muy alto para obtener una noción general del lenguaje. Este post tratará de profundizar más en cuanto a la sintaxis de métodos, considerar algo de alcances y tratar de cubrir cómo funcionan los miembros estáticos en Scala. También veremos algunas trampas para "manejar" la falta de instrucciónes imperativas.
+En esta serie de tutoriales, ya hemos inspeccionado los fundamentos de la [sintaxis de Scala](/scala/2011/11/22/scala-para-refugiados-de-java-parte-1.html) como también una aproximación de cómo funciona la [orientación a objetos](/scala/2011/11/23/scala-para-refugiados-de-java-parte-2.html). De todas maneras, no hemos visto ninguno de estos temas en mayor profundidad. La mayoría de nuestros esfuerzos se han concentrado en vistazos a un nivel muy alto para obtener una noción general del lenguaje. Este post tratará de profundizar más en cuanto a la sintaxis de métodos, considerar algo de alcances y tratar de cubrir cómo funcionan los miembros estáticos en Scala. También veremos algunas trampas para "manejar" la falta de instrucciónes imperativas.
 
 Más sobre métodos
 -----------------
@@ -36,11 +36,11 @@ La respuesta es "Sí". Scala permite diferentes visibilidades no solo para méto
 class Person {
   private var name = "Daniel Spiewak"
   val ssn = 1234567890    // campo constante público
- 
+
   def firstName() = splitName()(0)   // método público
- 
+
   private def splitName() = name.split(" ")    // método privado
- 
+
   protected def guessAge() = {
     import Math._
     round(random * 20)
@@ -54,7 +54,7 @@ Los modificadores de acceso de Scala también son un poco más poderosos que los
 
 <pre lang='scala'>
 package com.codecommit.mypackage
- 
+
 class MyClass {
   private[mypackage] def myMethod = "test"
 }
@@ -67,16 +67,16 @@ Por lo tanto, a excepción del modificador a nivel de paquete, la visibilidad en
 <pre lang='scala'>
 abstract class Person {
   private var age = 0
- 
+
   def firstName():String
   final def lastName() = "Spiewak"
- 
+
   def incrementAge() = {
     synchronized {
       age += 1
     }
   }
- 
+
   @native
   def hardDriveName():String
 }
@@ -87,17 +87,17 @@ En Java hubiésemos escrito el código anterior así:
 <pre lang='java'>
 public abstract class Person {
     private int age = 0;
- 
+
     public abstract String firstName();
- 
+
     public final String lastName() {
         return "Spiewak";
     }
- 
+
     public synchronized void incrementAge() {
         age += 1;
     }
- 
+
     public native String hardDriveAge();
 }
 </pre>
@@ -116,7 +116,7 @@ También deberías notar que ninguno de los métodos en Scala incluyen una cláu
       nombre.append(" Spiewak");
       nombre.toString()
     }
-     
+
     val s = nombre()
     println(s)    // imprime "Daniel Spiewak"
 </pre>
@@ -136,7 +136,7 @@ Esta forma de "no-return" resulta realmente importante cuando se trata de métod
 <pre lang='scala'>
     val arr = Array(1, 2, 3, 4, 5)
     val sum = arr.reduceLeft((a:Int, b:Int) => a + b)
-     
+
     println(sum)    // 15
 </pre>
 
@@ -155,7 +155,7 @@ Un concepto muy importante en la programación orientada a objetos es la sobrees
             return 5;
         }
     }
-     
+
     public class Manzana extends Fruta {
         @Override
         public int getPrecio() {
@@ -176,7 +176,7 @@ Este es el ejemplo de la Fruta escrito en Scala:
     class Fruta {
       def precio() = 5
     }
-     
+
     class Manzana extends Fruta {
       override def precio() = 1
     }
@@ -189,10 +189,10 @@ Generalmente cuando sobreescribis un método, necesitás hacer una llamada al m�
 <pre lang='scala'>
     class StrikeLabel(text:String) extends JLabel(text) {
       def this() = this("")
-     
+
       override def paintComponent(g:Graphics):Unit = {
         super.paintComponent(g)
-     
+
         g.setColor(Color.RED)
         g.drawLine(1, getHeight() / 2, getWidth() - 1, getHeight() / 2)
       }
@@ -212,7 +212,7 @@ Ese poco de código extra en la cláusula `extends` es lo que llamamos el *const
         public StrikeLabel(String text) {
             super(text);
         }
-     
+
         public StrikeLabel() {
             this("");
         }
@@ -233,18 +233,18 @@ En Java, los miembros estáticos son miembros normales de clases con un modifica
 <pre lang='java'>
     public class Utilities {
         public static final String APP_NAME = "Test App";
-     
+
         public static void loadImages() {
             // ...
         }
-     
+
         public static EntityManager createManager() {
             // ...
         }
     }
-     
+
     System.out.println(Utilities.APP_NAME);
-     
+
     Utilities.loadImages();
     EntityManager manager = Utilities.createManager();
 </pre>
@@ -256,18 +256,18 @@ Scala soporta este tipo de sintaxis, pero bajo la superficie es bastante diferen
 <pre lang='scala'>
     object Utilities {
       val APP_NAME = "Test App"
-     
+
       def loadImages() = {
         // ...
       }
-     
+
       def createManager():EntityManager = {
         // ...
       }
     }
-     
+
     println(Utilities.APP_NAME)
-     
+
     Utilities.loadImages()
     val manager = Utilities.createManager()
 </pre>
@@ -279,24 +279,24 @@ La sintaxis para usar estos "estáticos" es la misma, pero las cosas son un poco
 <pre lang='java'>
     public class Utilities {
         private static Utilities instance;
-     
+
         public final String APP_NAME = "Test App";
-     
+
         private Utilities() {}
-     
-        public void loadImages() { 
+
+        public void loadImages() {
             // ...
         }
-     
+
         public EntityManager createManager() {
             // ...
         }
-     
+
         public static synchronized Utilities getInstance() {
             if (instance == null) {
                 instance = new Utilities();
             }
-     
+
             return instance;
         }
     }
@@ -311,7 +311,7 @@ public class Person {
     public String getName() {
         return "Daniel";
     }
- 
+
     public static Person createPerson() {
         return new Person();
     }
@@ -328,7 +328,7 @@ La solución en Scala es declarar ambos, el objeto y la clase con el mismo nombr
 object Persona {
   def crearPersona() = new Persona()
 }
- 
+
 class Persona {
   def nombre() = "Daniel"
 }
