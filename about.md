@@ -7,7 +7,9 @@ title: Santiago Basulto | Sobre Mi
 
 <br />
 
-#### Podés escribirme a: 
+Mi nombre es Santiago Basulto. Soy programador Argentino.
+
+#### Podés escribirme a:
 
 <br /><br />
 
