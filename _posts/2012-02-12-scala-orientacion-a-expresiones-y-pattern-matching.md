@@ -11,7 +11,7 @@ Supongamos que estamos utilizando Scala para construir una Calculadora básica (
 
 Entonces, la forma normal de hacerlo en un lenguaje de programación de los que estamos acostumbrados (Java, Python, PHP, javascript) sería así:
 
-{% highlight scala%}
+{% highlight scala %}
 class Calculadora(marca: String) {
   // Este código suelto es el constructor!
   var color: String = ""
@@ -27,7 +27,7 @@ class Calculadora(marca: String) {
 
   def sumar(m: Int, n: Int): Int = m + n
 }
-{% endhighlight%}
+{% endhighlight %}
 
 Si no entendiste mucho del ejemplo anterior podés comenzar con el [Tutorial básico de Scala](http://google.com?2011-11-20-scala-para-refugiados-de-java-resumen).
 

@@ -5,9 +5,11 @@ title: Santiago Basulto
 
 {% assign first_post = site.posts.first %}
 
-# {{ first_post.title | truncatewords: 25 }}
+# {{ first_post.title }}
 
-{{ first_post.content | truncatewords: 250 }}
+<br />
+
+{{ first_post.content }}
 
 [Leer más &raquo;]({{ first_post.url}})
 
