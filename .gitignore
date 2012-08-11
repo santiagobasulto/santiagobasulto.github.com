@@ -5,4 +5,6 @@ _site
 .pydevproject
 *.*~
 *.nja
-
+#*
+.#*
+_posts/#*#

@@ -3,6 +3,10 @@ layout: default
 title: Santiago Basulto | Sobre Mi
 ---
 
+Python/Scala Hacker
+
+<a href="/contact.html">Contacto</a>
+<!---
 # Sobre mi
 
 <br />
@@ -26,3 +30,4 @@ Además:
 * [LinkedIn](http://www.linkedin.com/in/santiagobasulto)
 * [Stack Overflow](http://stackoverflow.com/users/198212/santiagobasulto)
 * [Facebook](http://www.facebook.com/santiago.basulto)
+-->
