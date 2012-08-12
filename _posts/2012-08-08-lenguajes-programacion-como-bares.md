@@ -49,4 +49,7 @@ Aunque ellos piensan que son dos bares distintos porque los separa una pared, en
 ## Smalltalk
 
 Este sí es un hermoso bar. De hecho muchos otros se copiaron la decoración y el estilo. En realidad, no lo copiaron, sino que adquirieron sus ideas ya que al dueño de este bar, Alan, no le importaba mucho que la gente tome sus ideas.
+
 Lamentablemente ya no viene mucha gente a este bar. No quedan muchas bebidas, simplemente las más comunes, y tardan mucho en llegar los proveedores. La verdad me gustaría que hiciesen un relanzamiento, para que mucha gente más lo conozca.
+
+Una solución para no perder este patrimonio histórico y cultural tal vez sería acercarlo a algún otro bar más grande y difundido. Por ejemplo, ponerlo cerca de Java y 
