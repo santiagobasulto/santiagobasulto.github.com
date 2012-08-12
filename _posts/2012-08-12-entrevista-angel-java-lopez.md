@@ -163,8 +163,14 @@ Cuanto más grande el sistema, y por lo tanto más complejo, más recomiendo TDD
 
 Cuando aprendes patrones, no te tenés que olvidar que los patrones tienen un contexto. No hay que poner todos los patrones solo porque aparecen en los libros. Prefiero codificar sin patrones al principio, y después aplicarlos a medida que son necesarios. Usarlos porque son necesarios, no solo porque se me ocurre usarlos.
 
-**Santiago**: ¿Leiste "Patrones de Diseño", de GoF?
+**Santiago**: ¿Leiste "Patrones de Diseño", de GoF? ¿Lo recomendas?
 
-**Angel**:
+**Angel**: Sí, pero en ese entonces no tenían TDD. En aquella época ellos decían "programá contra una interfaz", pero la gente lo entendió mal. "Programar contra una interfaz" significa asumir que un objeto tenga tales métodos, pero no que haya una interfaz como interfaz declarada. Muchos de los ejemplos de GoF son en Smalltalk, y Smalltalk no tenía interfaces.
 
+**Santiago**: ¿Cuál es el bug más grande que te acuerdes?
 
+**Angel**: Usando TDD ninguno. Me acuerdo uno que no es mío. Fue un bug histórico de un compilador de los años 80 (no recuerdo bien de qué), que el autor (un ruso) refactorizó una rutina y lo hizo mal. Durante dos años nadie se dio cuenta, porque nadie pasaba por ese lado. Y un día pasó alguien y fue un desastre. Eso es lo bueno de TDD. Nunca te va a dejar escribir algo que nadie usa.
+
+**Santiago**: Hablaste de TDD. Los tests unitarios se basan en pequeñas aserciones y el uso de invariantes. Eso me lleva a la siguiente pregunta. ¿Es necesario la matemática u otras ciencias básicas para ser un buen programador?
+
+**Angel**: No. Hay muchos programadores a los que no les gusta la matemática. Por ejemplo, el tema de invariantes apareció en un libro de Bertrand Meyer, "Construcción de Software orientado a objetos" donde él presentaba su lenguaje, Eiffel. En Eiffel es donde aparece ese concepto de la pre-condición y la post-condición, y también los asserts y otras cosas. Lo que le faltaba a Eiffel eran los namespaces.
