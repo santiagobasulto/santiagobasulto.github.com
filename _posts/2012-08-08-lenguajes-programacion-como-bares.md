@@ -2,7 +2,8 @@
 layout: post
 title: "Los lenguajes de programación son bares"
 category: general
-tags: general python java scala programacion
+tags: python java scala programacion
+published: false
 ---
 
 En el excelentísimo [Coders at Work](http://www.amazon.com/Coders-Work-Reflections-Programming-ebook/dp/B006RM2KBW/ref=tmm_kin_title_0?ie=UTF8&qid=1344452989&sr=8-1), [Joshua Bloch](http://en.wikipedia.org/wiki/Joshua_Bloch) responde a la pregunta de por qué la gente se pone tan "religiosa" a la hora de debatir sobre diferentes lenguajes de programación.
@@ -52,4 +53,4 @@ Este sí es un hermoso bar. De hecho muchos otros se copiaron la decoración y e
 
 Lamentablemente ya no viene mucha gente a este bar. No quedan muchas bebidas, simplemente las más comunes, y tardan mucho en llegar los proveedores. La verdad me gustaría que hiciesen un relanzamiento, para que mucha gente más lo conozca.
 
-Una solución para no perder este patrimonio histórico y cultural tal vez sería acercarlo a algún otro bar más grande y difundido. Por ejemplo, ponerlo cerca de Java y 
+Una solución para no perder este patrimonio histórico y cultural tal vez sería acercarlo a algún otro bar más grande y difundido. Por ejemplo, ponerlo cerca de Java y

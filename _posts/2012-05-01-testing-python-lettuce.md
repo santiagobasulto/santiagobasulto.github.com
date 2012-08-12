@@ -3,7 +3,6 @@ layout: post
 title: "Testing en Python con Lettuce"
 category: python
 tags: python testing tdd bdd programacion lettuce
-published: false
 ---
 
 En el último tiempo he estado realizando mucho testing para athlete.com. La cantidad de características y funcionalidades crecen todos los días, así que es necesario tener un buen *test coverage* para que al agregar nuevas cosas no se rompan otras.
