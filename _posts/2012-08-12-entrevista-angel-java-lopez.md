@@ -195,4 +195,44 @@ Sin embargo, en los últimos años gracias al TDD puedo hacer cosas sin la neces
 
 **Santiago**: Hablaste bastante de TDD pero no mencionaste al BDD. ¿Qué opinión tenés?
 
-**Angel**: Todavía no llegué. Me interesa, pero no lo necesito. La mayoría de la gente ni siquiera hace TDD, y para mis proyectos personales me alcanza con TDD
+**Angel**: Todavía no llegué. Me interesa, pero no lo necesito. La mayoría de la gente ni siquiera hace TDD, y para mis proyectos personales que estoy solo me alcanza con TDD. Las cosas se adoptan en la medida que la gente las quiera adoptar, no se puede imponer.
+
+**Santiago**: Contanos un poco de Microsoft, cómo es su relación con el opensource y demás.
+
+**Angel**: Bueno, ya desde el 2001 permitieron bajo el ECMA que nazca el proyecto Mono. Veo que Oracle le hace problemas a Google por Java, y Microsoft se comprometió a no hacer ese tipo de cosas con C#. Por eso también tuvo esa aceptación C#.
+
+La amenaza que tuvo Microsoft en estos años fue principalmente Linux, en entornos de servidores, que principalmente son servidores Apache corriendo sobre Linux. Pero al resto de la empresa no lo afectó. Por lo que estuve leyendo había cierta preocupción de que Linux creciera, pero ya realmente la batalla del desktop ya la ganaron. Hay empresas, o entidades del gobieron que han tratado de pasar a Linux, pero después de un tiempo volvieron a Microsoft. No estoy en contra del open-source, al contrario, lo apoyo, pero algunas veces pagar una licencia te cuesta más barato que implementar open-source.
+
+En los últimos años, la amenaza de Microsoft está en Apple y en Google. En Apple con el mobile, el iphone, ipad, etc. El mercado de tablets está impulsado por Apple, y ahora Microsoft está tratando de entrar. Y Google con el browser, con la idea de tener un app store dentro del browser. Está el movimiento de que el browser sea el sistema operativo.
+
+El otro tema que creo que Microsoft no se lo esperó, es el surgimiento del cloud computing. Ahí Amazon está liderando, sobretodo por el precio, porque tal vez en cuanto a funcionalidad Microsoft está cada vez mejor, pero no puede bajar los precios.
+
+**Santiago**: Ya que mencionás el cloud computing. ¿Lo usás? ¿Qué te parece?
+
+**Angel**: No, yo no lo uso. Estoy asistiendo a los meet-ups del AWS User Group de Buenos Aires, así que si tuviera que usar usaría la plataforma de Amazon. Por lo poco que vi me parece mucho más fácil y mantenible. Aparte ha seguido un crecimiento más orgánico que Azure. Actualmente Azure va por la tercer interfaz web, en cambio AWS, fue más estable. Jeff Bezos insistió e insistió con que todo lo que habían hecho lo podían llegar a reutilizar y vender, y pasó de vender libros a liderar el mercado del cloud computing. Es una gran visión de Bezos.
+
+Finalmente, por lo que está luchando Microsoft es por "las tres pantallas". La pantalla desktop, la pantalla mobile, y la Tv. La Tv va a ser el próximo campo de batalla. Y Microsoft se ha orientado mucho a consumo.
+
+**Santiago**: ¿Programás para moviles?
+
+**Angel**: No, ni siquiera tengo teléfono, pero voy a tener que ponerme más con eso. Igual pienso que lo que más fuerza va a tomar son las tablets. Al ser cada vez más livianas y al haber internet por todos lados, es ahí hacia donde se va a mover el mercado. Y esa es la gran movida de Microsoft con Windows 8, que está siendo usado en desktop, pero el principal objetivo fueron las tablets. Y lo hicieron así para que todos programemos para la misma plataforma de forma fácil, para que haya sinergia.
+
+Ahora en este proyecto estamos emulando windows 8 para hacer una aplicación web. La idea de windows 8 es que sea más horizontal. Hacer que los programadores se muevan a eso. Incluso .Net empieza a desaparecer y surge con más fuerza HTML5 y Javascript, abandonan Silverlight, etc. Windows 8 es un giro para Microsoft hoy día, como lo fue en su momento .Net.
+
+**Santiago**: Contanos un poco más del MUG (Microsoft User Group).
+
+**Angel**: Ahora voy a hacer una charla de TDD y va a haber una charla por el día del programador. El tema del MUG es la edad, no va tanta gente joven. Hay más programadores de la década del 90.
+
+**Santiago**: ¿Cuál es tu opinión sobre el Open Source?
+
+**Angel**: Todo debería ser Open Source para el desarrollo. Incluso Visual Studio debería ser gratis. Es el único IDE popular que no es gratis. Como desarrolladores somos parte de la cadena, no el final. Las empresas que viven de los desarrolladores terminaron desapareciendo, como el caso de Borland. Microsoft debería ver eso, que todo lo que obtienen como ingreso debería venir de licencias, de juegos, etc. Acá en Argentina mucho tiempo los juegos significaron un gran ingreso. Se pirateaba mucho todo, pero los juegos era lo único que se compraba.
+
+Igual hablo de que sea gratuito, no Open Source. Tal vez un IDE cerrado, gratuito, que sea extensible es conveniente. Por ejemplo, ¿cuánta gente contribuye al core de Eclipse? No muchos. Sí hay muchos plugins.
+
+Ya ha cambiado el modelo de negocio, se basa en licencias de software de servidores, o licencias tipo freemium, dónde algunos productos son gratuitos pero para acceder a más características se cobra, vender los servicios, etc. Microsoft eso lo hace bien, con SkyDrive, hotmail (ahora Outlook). Eso en gran parte fue movido por Google.
+
+Ahí aparece algo interesante relacionado con Google. Yo pienso que toda esta movida post-burbuja apareció gracias al modelo de la publicidad de Google. Al poder hacer dinero Google con la publicidad permitió que surja la Web 2.0. Todos los bloggeros por ejemplo pudieron obtener ingresos gracias a eso. Incluso Facebook fue posible gracias a eso, porque también vende publicidad. Antes todos esos ingresos tenían que ser por venta de licencias a los usuarios. Antes, para poner una publicidad tenías pocas opciones. Por ejemplo, para poner una publicidad en Yahoo! tenías que llenar un formulario, enviarlo a Yahoo! y que te respondan a los 6 meses diciéndote que como tu sitio era en español, ellos no tenían publicidad en español. Y Google rompió con todo eso, hizo posible ese tipo de negocio con la publicidad en internet. Democratizó e hizo factible, sin fricciones el comercio de la publicidad en Internet.
+
+**Santiago**: Hablame un poco de Inteligencia Artificial. ¿Qué opinión tenés?
+
+**Angel**: Es un tema muy amplio. Viví el auge al final de los años 70 y comienzo de los 80. ## 1:19:39
