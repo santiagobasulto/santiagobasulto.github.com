@@ -7,6 +7,7 @@ published: false
 ---
 
 <!--
+Resumen: Hombres vs Mujeres, TDD, meet-ups (social), historia.
 00:25-07:00: ¿Cómo arrancaste? ¿Cómo era la computación y la programación en la época?*
 07:00-09:00: ¿Cómo era la facultad en esa época?*
 09:00-10:00: ¿Cuál fue el primer programa que escribiste?*
@@ -173,4 +174,25 @@ Cuando aprendes patrones, no te tenés que olvidar que los patrones tienen un co
 
 **Santiago**: Hablaste de TDD. Los tests unitarios se basan en pequeñas aserciones y el uso de invariantes. Eso me lleva a la siguiente pregunta. ¿Es necesario la matemática u otras ciencias básicas para ser un buen programador?
 
-**Angel**: No. Hay muchos programadores a los que no les gusta la matemática. Por ejemplo, el tema de invariantes apareció en un libro de Bertrand Meyer, "Construcción de Software orientado a objetos" donde él presentaba su lenguaje, Eiffel. En Eiffel es donde aparece ese concepto de la pre-condición y la post-condición, y también los asserts y otras cosas. Lo que le faltaba a Eiffel eran los namespaces.
+**Angel**: No. Hay muchos programadores a los que no les gusta la matemática. Por ejemplo, el tema de invariantes apareció en un libro de Bertrand Meyer, "Construcción de Software orientado a objetos" donde él presentaba su lenguaje, Eiffel. En Eiffel es donde aparece ese concepto de la pre-condición y la post-condición, y también los asserts y otras cosas. Lo que le faltaba a Eiffel eran los namespaces, porque a nadie se le había ocurrido en los años 80 la utilización de namespaces.
+
+En esa época se movió mucho el tema de los lenguajes, porque el departamento de defensa de los Estados Unidos llamó a una licitación internacional para implementar un solo lenguaje en todos sus sistemas, que al final terminó ganando Ada, de un profesor francés llamado Jean Ichbiah. El primer lenguaje en el que vi el tratamiento de excepciones fue en Ada, no recuerdo otro antes. Porque los militares querían saber que si pinchaba algo, explotase de una forma controlada.
+
+Se cuenta que esa licitación (que era secreta), Niklaus Wirth perdió presentando el lenguaje Modula.
+
+**Santiago**: Entonces no es necesaria la matemática, ¿qué hay de otras ciencias? ¿te sirvió alguna otra ciencia a la hora de programar?
+
+**Angel**: Ojo, a mi la matemática me sirve. Lo que digo es que otros programadores pueden no necesitarla, pueden ser buenos programadores sin matemática.
+
+Lo que me sirvió a mi es la capacidad de pensar ordenadamente, y la para concentración. En los 80, cuando iba a la facultad de ingeniería, la carrera se llamaba Analista de Sistemas y había muchas mujeres, de hecho había mitad hombres y mitad mujeres. Pasa que era una carrera del punto de vista más organizacional, no había mucha programación. Era para armar análisis de sistemas en papel, organigramas, etc. Lo que vi ahí pasando los años, es que las mujeres se dedicaron más a la parte de análisis funcional y los hombres más a la programación. Siempre he observado eso. Y pienso que es en parte por el tema de la concentración. Los hombres tienen mayor poder de concentración, a diferencia de las mujeres, que son más empáticas, tienen más facilidad para liderar grupos, etc. Sin ser sexista, son simplemente algunas diferencias que observo.
+
+Sin embargo, en los últimos años gracias al TDD puedo hacer cosas sin la necesidad de concentrarme tanto. Puedo ir escribiendo tests chicos, hacer baby-steps, entrar al código, salir, volver a entrar.
+
+
+**Santiago** Dado tu conocimiento, y tu experiencia. ¿Cómo lidiás con el día a día, con la gente que te pregunta cosas constantemente y atenta contra esa concentración?
+
+**Angel**: Bueno, escribo posts. Jeje. Por eso escribo los posts, porque ya queda ahí. Hoy por ejemplo escribí uno sobre TDD, basado en la experiencia de un proyecto, entonces lo discutí con la gente del proyecto y después lo pasé al posts. De esa manera ya queda para la posteridad. Por eso también dejé de dar cursos. Lo que se pierde es la interacción con la gente, es como que estás en un pedestal. Pero después con los meet-ups y las reuniones se genera esa interacción para conectarse más con la gente. Eso es algo que no se debería perder. Todo el mundo se reune, hasta los más capos. Es un tema que a veces se descuida, pero muchas veces termina siendo fundamental para el open-source. Porque los desarrolladores se terminan conociendo. Cuando la gente no se conoce, un mail mal interpretado, o una frase mal hecha puede generar fricción. Pero si ya te juntaste a tomar una cerveza, o compartiste una cena, podés mandar cualquier cosa y se recibe de otra forma.
+
+**Santiago**: Hablaste bastante de TDD pero no mencionaste al BDD. ¿Qué opinión tenés?
+
+**Angel**: Todavía no llegué. Me interesa, pero no lo necesito. La mayoría de la gente ni siquiera hace TDD, y para mis proyectos personales me alcanza con TDD
