@@ -235,4 +235,14 @@ Ahí aparece algo interesante relacionado con Google. Yo pienso que toda esta mo
 
 **Santiago**: Hablame un poco de Inteligencia Artificial. ¿Qué opinión tenés?
 
-**Angel**: Es un tema muy amplio. Viví el auge al final de los años 70 y comienzo de los 80. ## 1:19:39
+**Angel**: Es un tema muy amplio. Viví el auge de los sistemas experots, al final de los años 70 y comienzo de los 80. Ahí hubieron éxitos y fracasos, y después hubo una especie de otoño de la inteligencia artificial (recuerdo un paper hablando de esto). La IA tuvo mucha inversión durante la guerra fría, se desarrolló mucho durante esa época. Hubo un caso negativo, el de la quinta generación de Japón, a mediado de los años 80, dónde una de las cosas que quería hacer era implantar IA en varios proyectos con prolog. Los japoneses siempre venían adoptando nuevas cosas y haciéndolas generalmente bien, gracias también a la intervención estatal que había. Pero con la Inteligencia Artificial fracasaron.
+
+**Santiago**: ¿Cuál es tu lenguaje preferido?
+
+**Angel**: No hay uno específico. Voy pasando por etapas. Por ahora C# y Javascript. Javascript me parece más flexible y con menos ceremonia que Ruby o Python. Tiene su parte áspera, pero si la evitás es muy flexible. Y si trabajás con TDD podés hacer un montón de cosas incrementalmente y no te cuesta programarlo.
+
+**Santiago**: Que no tengas un lenguaje predilecto me lleva a otra pregunta. ¿Cuál es el estado de la computación hoy día? ¿Por qué no estamos lo suficientemente avanzados para que haya una opción perfecta?
+
+**Angel**: Nunca va a haber "El" lenguaje. Fijate que pasaron muchas décadas desde los primeros lenguajes de los años 50, y todavía siguen estando. Sobreviven lenguajes viejos y surgen nuevos. Sobrevive Smalltalk, sobrevive Cobol. Y en el medio de todo eso surge Python o surge Ruby. Y ahora con Internet hay aún más sinergia. Porque cuando surgió Python o surgió Ruby. Ruby por ejemplo fue incubado en la empresa donde trabajaba Matz, no fue una incubación "muy internet". Eso cambió ahora.
+
+Lo que no veo ahora es un sistema operativo de ese tipo. La industria de los sistemas operativos se quedó más estancada. Android por ejemplo lo tuvo que impulsar Google. No salió de una Facultad, como el caso de Linus en Finlandia.
