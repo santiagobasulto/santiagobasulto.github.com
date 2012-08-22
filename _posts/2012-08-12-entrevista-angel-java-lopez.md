@@ -243,6 +243,62 @@ Ahí aparece algo interesante relacionado con Google. Yo pienso que toda esta mo
 
 **Santiago**: Que no tengas un lenguaje predilecto me lleva a otra pregunta. ¿Cuál es el estado de la computación hoy día? ¿Por qué no estamos lo suficientemente avanzados para que haya una opción perfecta?
 
-**Angel**: Nunca va a haber "El" lenguaje. Fijate que pasaron muchas décadas desde los primeros lenguajes de los años 50, y todavía siguen estando. Sobreviven lenguajes viejos y surgen nuevos. Sobrevive Smalltalk, sobrevive Cobol. Y en el medio de todo eso surge Python o surge Ruby. Y ahora con Internet hay aún más sinergia. Porque cuando surgió Python o surgió Ruby. Ruby por ejemplo fue incubado en la empresa donde trabajaba Matz, no fue una incubación "muy internet". Eso cambió ahora.
+**Angel**: Nunca va a haber "El" lenguaje. Fijate que pasaron muchas décadas desde los primeros lenguajes de los años 50, y todavía siguen estando. Sobreviven lenguajes viejos y surgen nuevos. Sobrevive Smalltalk, sobrevive Cobol. Y en el medio de todo eso surge Python o surge Ruby. Y ahora con Internet hay aún más sinergia. Porque cuando surgió Python o surgió Ruby era más difícil apalancarlos. Ruby por ejemplo fue incubado en la empresa donde trabajaba Matz, no fue una incubación "muy internet". Eso cambió ahora.
 
-Lo que no veo ahora es un sistema operativo de ese tipo. La industria de los sistemas operativos se quedó más estancada. Android por ejemplo lo tuvo que impulsar Google. No salió de una Facultad, como el caso de Linus en Finlandia.
+Lo que no veo ahora es un sistema operativo de ese tipo. La industria de los sistemas operativos se quedó más estancada. Android por ejemplo lo tuvo que impulsar Google, no salió de una Facultad, como el caso de Linus en Finlandia. Las interfaces gráficas son un problema en ese caso. En Linux es muy común tener GTK o alguna otra, pero tampoco surgieron muchas, porque cuesta mucho hacerlas. Entonces, al final una triunfa y el resto programa encima. En fin, es más fácil programar un lenguaje que todos los widgets de una interfaz gráfica.
+
+Otra cosa que aparece nueva, como un nuevo concepto, son las "Application Store", donde un programador puede programar algo y ponerlo en la App Store de Android o de Apple, etc. Incluso te resuelven el problema monetario, porque hasta lo venden por vos. Te permite entrar más fácilmente al mercado, no hace falta que tengas una empresa, o algo parecido para entrar.
+
+**Santiago**: ¿Qué es un programador? ¿Un Ingeniero, un Artesano o un Artista?
+
+Es un ingeniero y un artesano. La ciencia se ocupa de lo que "es", el ingeniero se ocupa de crear lo que no está. La ingeniería hace puentes, la ciencia se ocupa de estudiar las montañas, las piedras, los animales, por ejemplo. Después el ingeniero se encarga de crear.
+
+Pero la programación sigue siendo algo artesanal. El movimiento ágil se encarga de que uno esté orgulloso del concepto de "Craftsmanship", el ser un artesano. Tener el orgullo ese de armar la Catedral, de que hasta la piedra más chiquita sea algo que contribuye al todo, a lo que se está armando. Y eso va a continuar por varios años más.
+
+Un tema a investigar que a mi me interesa es el de los Sistemas Distribuídos, sistemas que corran en varias máquinas a la vez. Las supercomputadoras no prendieron, lo que sí fue exitoso fue el "scale-out". Es más fácil poner varias computadoras comunes a trabajar en un problema que armar o comprar una supercomputadora. Me acuerdo de un caso de una universidad que había contratado miles de instancias de AWS para correr un proceso de investigación 8 horas, y les costó más barato que hacerlo en una sola computadora. Los sistemas distribuídos están cada vez más presentes, porque incluso nuestro cerebro procesa en distribuído.
+
+Me preguntabas por los libros hace un rato. Ahora recuerdo uno inspirador para esto que estamos hablando que es "La sociedad de la Mente", de Marvin Minsky. Donde va desglosando y dice que nuestra mente funciona con varios agentes. Esos agentes fueron apareciendo a lo largo de la evolución, y que no es "una sola mente". Entonces eso sería bueno investigar. En vez de hacer un sistema que piense, o un solo programa, empezar a hacer agentes que colaboren para resolver un problema y que colaboren entre ellos. Que se puedan programar y agregar más, y que la comunidad pueda colaborar con otros agentes.
+
+**Santiago**: Hoy hablábamos del tipado estático como una de las mejores herramientas a la hora de comprobar la coherencia de nuestro código. Es raro no ver que mejores herramientas hayan progresado a lo largo de los años. ¿Ves en el futuro a la IA del lado del programador, ayudándonos a escribir mejor código, mejores programas?
+
+**Angel**: Yo tengo un proyecto, que es el **AJGenesis** que trata de ser un sistema experto, es decir, de *hacer sistemas*. Yo le voy enseñando cómo hacer el sistema, y él va haciéndolo. Obviamente, todavía es muy trivial lo que hace. Pero sobrevivió 10 al cambio de tecnología y sigue funcionando. Es un tema interesante a investigar, para que la programación la pueda hacer la propia máquina. Pero por ahora hay mucho de artesanía.
+
+Hay profesiones que desaparecieron a lo largo de la historia, que fueron reemplazadas por la tecnología. Por ejemplo, en el siglo 19 había un mercado muy grande de motores, pero terminó desapareciendo cuando apareció el mercado de los automotores. Hoy no ves muchos negocios que vendan motores, la mayoría vende autos. Tal vez dentro de unos años nadie se acuerde de las PCs y sean todas tablets, es una posibilidad.
+
+**Santiago**: ¿Qué es necesario para que eso suceda?
+
+**Angel**: Tal vez otros lenguajes, para ir levantando el nivel. Por ejemplo, Visual Basic en los años 90 elevó el nivel, o las expectativas. O sea, no tenías que programar los botones a bajo nivel, sino te daba abstracciones gráficas. Pero nunca apareció algo mejor que eso. Hay algunos intentos mejores, pero nunca prendió algo completamente. Nosotros seguimos programando como en los años 70, en un archivo de texto vacío. Debería buscarse algo mejor, pero la verdad no se qué va a pasar con eso. La gente prefiere código. Es más, en los últimos años se volvió más aún al código. Ya no se quieren las configuraciónes con XML y todas esas cosas, ahora se prefiere código.
+
+**Santiago**: No se por qué, pero de pronto me acordé de Hibernate.
+
+**Angel**: Bueno, por ejemplo, ahora en NHibernate hay una opción de configuración desde el código, porque eso es lo que quiere la gente. Se prefiere configurar por código, para usar mejor TDD y poder utilizar herramientas de refactoring, que depender de un mapeo XML. Incluso en la parte gráfica se da esto. Ya no se prefiere arrastrar un botón a escribir el código. Hay un artículo que habla de lo "Simple vs. lo Fácil". Tal vez lo más fácil es arrastrar el botón, pero después la complejidad crece y termina emergiendo.
+
+Eso también pasa en algunos momentos con frameworks como Ruby on Rails o Django. En un momento llega a ser todo tan fácil que es difícil customizarlo. Tal vez querés agregar algo que el framework no lo tiene y tenés que empezar a ahondar a bajo nivel y la complejidad aumenta significativamente.
+
+**Santiago**: ¿Cuál es el rol de la universidad?
+
+**Angel**: A mi la universidad me sirvió para aprender a pensar. En general acá la secundaria, salvo alguna técnica, tiene un nivel muy bajo. No solo lo digo yo, he preguntado en mis viajes y todos coinciden. Por eso existe también el Ciclo básico en la UBA, o los cursos de ingreso, es la forma de nivelar. A mi también me pasó eso, yo me tuve que esforzar mucho en la universidad porque en la secundaria no me exigieron.
+
+Ese es uno de los roles de la facultad, tensar al alumno. Por eso yo no creo que deban sacarse las materias ciencias básicas (siempre está latente ese debate), porque son materias formativas que sirven para tensarte la neurona.
+
+**Santiago**: En la universidad, ¿C o Python? ¿Es preferible bajo nivel o alto nivel?
+
+**Angel**: No se. Ahora ha cambiado un poco. Pero hace unos años yo vivía del curso de Java porque en la universidad no se daba, estaban siempre atrasados. Ahora con el tema de Internet ha cambiado un poco. Aparte los estudiantes cada vez entra a trabajar antes también, y se choca con el mundo real. Entonces hay más presión sobre los profesores, porque si están atrasados los estudiantes reaccionan con el conocimiento que tienen. En el 2000, 2001, con la crisis los cursos tenían mucho éxito, porque los chicos para irse a trabajar al exterior necesitaban aprender cosas nuevas, porque no les alcanzaba para encontrar un trabajo.
+
+**Santiago**: Siguiendo con el tema. ¿Es preferible trabajar, estudiar, ambas a la vez?
+
+**Angel**: Si se puede, es preferible hacer ambas de forma conjunta. Tal vez ahora la universidad está más cerca de la realidad y entonces se podría aprovechar un poco más el estudio. En mi tiempo me sirvió mucho hacer las dos. La universidad para pensar y el trabajo para estar al día.
+
+**Santiago**: ¿Qué se necesita para ser un buen programador?
+
+**Angel**: Estar abierto a aprender. Siempre vas a aprender algo, ya que todo cambia. Y cada vez es más necesario saber trabajar en equipo, tener las llamadas "soft skills". Ya no hay sistemas que los pueda llevar a cabo una sola persona. Es importante participar en proyectos Open Source, o publicar proyectos propios para ir practicando la parte de código y las relaciones.
+
+La mitad de tu currículum debería estar en GitHub. Hoy si tuviese que tomar a un programador me fijo eso. Primero si tiene algunas Soft Skills básicas y después el código. O sea, que haya hecho algo, por más que no sea buen código. Que muestre interés en la programación, que no haya salido derecho de la universidad a buscar trabajo sin haber tirado una linea.
+
+**Santiago**: Entonces, en resumen, ¿qué le recomendás a un programador nuevo para que arranque?
+
+**Angel**: Como te dije antes, que aprenda un lenguaje de tipado estático y uno de tipado dinámico. Además que aproveche las facilidades actuales para leer código de otros y para relacionarse. Yo hace mucho que no me compro un libro por ejemplo, todo cambia muy rápido. Salvo los libros formativos tipo "The Art of Computer Programming" de Donald Knuth (que son pocos), si te comprás un libro sobre alguna tecnología en particular, en dos años ya no sirve más.
+
+**Santiago**: Muchas gracias Angel.
+
+**Angel**: Gracias a vos.
