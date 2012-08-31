@@ -1,14 +1,11 @@
-{% include header.txt %}
+---
+layout: base
+---
 
-{% include topbar.txt %}
-<div class="container-fluid">
-    <div class="row-fluid">
-      <div class="span3 columns blogroll">
-           {% include allposts.txt %}
-      </div>
-      <div class="span7 columns content">
-        {{ content }}
-      </div>
-      <div class='span2 columns extra_col'>&nbsp;</div>
-    </div>
-{% include footer.txt %}
+{% include head_title.html %}
+<div class="bd">
+    <div class="entry-content">
+    {{ content }}
+    </div><!-- entry-content -->
+</div><!-- bd -->
+

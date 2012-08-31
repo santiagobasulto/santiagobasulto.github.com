@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Santiago Basulto
+title: "Bienvenido a mi blog!"
 ---
 
 {% assign first_post = site.posts.first %}
 
+{% comment %}
 # {{ first_post.title }}
+{% endcomment %}
 
 <br />
 
