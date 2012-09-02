@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Santiago Basulto | Blog
+title: "Todos los posts"
 ---
-
-# Todos los posts #
 
 <ul class="post-list">
 {% for post in site.posts %}

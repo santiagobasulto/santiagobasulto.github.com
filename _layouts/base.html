@@ -19,14 +19,7 @@
         <div class="unit-head">
             <div class="unit-inner unit-head-inner">
                 <p class="logo"><a href="#" style='border-bottom: 1px black dotted;'>{{ site.name }}</a></p>
-                <nav class="nav-global">
-                    <ul>
-                        <li><a href="/archive.html">Archive</a></li>
-                        <li><a href="/categories.html">Categories</a></li>
-                        <li><a href="/pages.html">Pages</a></li>
-                        <li><a href="/tags.html">Tags</a></li>
-                    </ul>
-                </nav>
+		{% include menu.txt %}
             </div><!-- unit-inner -->
         </div><!-- unit-head -->
     </header>
@@ -52,25 +45,7 @@
             </div><!-- unit-inner -->
         </div><!-- unit-body -->
     </div><!-- body -->
-    <footer class="the-footer">
-        <div class="unit-foot">
-            <div class="unit-inner unit-foot-inner">
-                <div class="misc vcard">
-                    <h4>about</h4>
-                    <ul>
-                        <li class="contact"><address><span class="author fn n">Name Lastname</span> - <span class="fn email">blah@email.test</span></address></li>
-                        <li class="github"><a href="http://github.com/username/" rel="me">github.com/username</a></li>
-                        <li class="twitter"><a href="http://twitter.com/username/" rel="me">twitter.com/username</a></li>
-                        <li class="rss"><a href="http://feeds.feedburner.com/">Subscribe to RSS Feed</a></li>
-                    </ul>
-                </div><!-- misc -->
-                <p class="licence">
-                    Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
-                    Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
-                </p>
-            </div><!-- unit-foot-inner -->
-        </div><!-- unit-foot -->
-    </footer>
+    {% include footer.txt %}
 </div><!-- page -->
 <script>
     (function(d, s) {

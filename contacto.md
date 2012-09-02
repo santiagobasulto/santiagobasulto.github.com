@@ -1,21 +1,13 @@
 ---
 layout: default
-title: Santiago Basulto | Contacto
+title: Contacto
 ---
 
-# Contacto
-
-<br />
-
-#### Podés escribirme a: 
-
-<br /><br />
+#### Podés escribirme a:
 
 _santiago [punto] basulto [arroba] gmail [punto] com_
 
 _santiago [dot] basulto [at] gmail [dot] com_
-
-<br />
 
 Además:
 

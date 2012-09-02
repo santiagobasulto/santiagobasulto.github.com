@@ -3,7 +3,6 @@ layout: post
 title: "Entrevista con Angel Java Lopez"
 category: entrevistas
 tags: programacion entrevistas programadores
-published: false
 ---
 
 **Santiago**: ¿Cómo arrancaste con la programación?

@@ -1,0 +1,6 @@
+<nav class="nav-global">
+    <ul>
+	<li><a href="/archivo.html">Archivo</a></li>
+	<li><a href="/contacto.html">Contacto</a></li>
+    </ul>
+</nav>

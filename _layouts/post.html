@@ -1,13 +1,18 @@
 ---
-layout: default
+layout: base
 ---
-<h1 class='page_title'> {{ page.title }} <g:plusone size="small"></g:plusone> </h1>
 
-<div class='main_content'>
-{{ content }}   
-</div>
+{% include head_title.html %}
 
-<div class='comments'>
-<h2 > Comments </h2>
-{% include disqus.txt %}  
-</div>
+<div class="bd">
+    <div class="entry-content">
+    {{ content }}
+    </div><!-- entry-content -->
+    <div class='entry-content'>
+      <h2>Comments</h2>
+      {% include disqus.txt %}
+    </div>
+</div><!-- bd -->
+
+
+
