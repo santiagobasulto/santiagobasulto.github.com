@@ -5,6 +5,14 @@ category: entrevistas
 tags: programacion entrevistas programadores
 ---
 
+Antes de reunirme con Angel no sabía sinceramente qué me iba a esperar. Había leído bastante de su blog y había visto alguna charla dada por él, pero no mucho más. Cuando le envíé el correo para proponerle esta entrevista, me sorprendió su respuesta: "Cómo no! Podemos hacerlo!". Sin preámbulos, sin preguntas, sin lineamientos ni juicios.
+
+Una vez charlando con él, me encontré con un tipo muy afable, que le gusta conversar y expresar sus ideas. Enseguida noté una latente fascinación por cuestiones no técnicas, las cuales traté de aprovechar al máximo por la riqueza inherente de entender la programación en contexto. Por ejemplo, hablamos mucho de historia; me contó de sus comienzos, con gran detalle; pasando por diferencias psicológicas entre hombres y mujeres, formas de hacer negocios, el futuro de la computación, y muchas otra cosas más. Espero que lo disfrutes tanto como yo.
+
+Sin más rodeos, la entrevista con Angel.
+
+---------------------------------------
+
 **Santiago**: ¿Cómo arrancaste con la programación?
 
 **Angel**: Yo arranqué en la UBA, en la facultad de Ingeniería, si bien antes ya había estado en algunos institutos. En ese entonces no había computadoras personales, había que programar en papel. Eso era cerca del año 78.
