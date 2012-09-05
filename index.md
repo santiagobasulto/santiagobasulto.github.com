@@ -18,27 +18,12 @@ _Posts sobre Scala:_
 * [Scala para refugiados de Java - 3 partes](/scala/2011/11/20/scala-para-refugiados-de-java-resumen.html)
 
 [Todos los posts](/archivo.html)
-{% comment %}
-
-<ul class="post-list">
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="date">( {{ post.date | date: "%b %Y" }} )</span></li>
-{% endfor %}
-</ul>
-
-{% for post in site.posts %}
-{% endfor %}
-{% assign first_post = site.posts.first %}
 
 
-# {{ first_post.title }}
+_¿Por qué charliedontcode.com?_
 
+*Charlie Don't Code* está inspirado en la mejor escena del cine de toda la historia:
 
-<br />
+<iframe width="420" height="315" src="http://www.youtube.com/embed/aLEjr4eg8rA" frameborder="0" allowfullscreen></iframe>
 
-{{ first_post.content }}
-
-[Leer más &raquo;]({{ first_post.url}})
-
-[Todos los posts](/archivo.html)
-{% endcomment %}
+> "Charlie don't surf" by Robert Duvall. Apocalypse Now.
