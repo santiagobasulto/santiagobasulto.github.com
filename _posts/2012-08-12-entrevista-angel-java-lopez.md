@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Entrevista con Angel Java Lopez"
+title: "Entrevista con Angel \"Java\" Lopez"
 category: entrevistas
 tags: programacion entrevistas programadores
 ---
