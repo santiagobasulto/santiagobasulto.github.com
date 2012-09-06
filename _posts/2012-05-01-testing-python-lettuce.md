@@ -7,7 +7,7 @@ tags: python testing tdd bdd programacion lettuce
 
 En el último tiempo he estado realizando mucho testing para athlete.com. La cantidad de características y funcionalidades crecen todos los días, así que es necesario tener un buen *test coverage* para que al agregar nuevas cosas no se rompan otras.
 
-Una vez que usamos concientemente TDD vemos como la vida se nos simplifica, y a la vez nos damos cuenta de que pueden existir cosas mejores. Al estar tan metido en Scala en el último año me di cuenta de que existe algo mejor que el simple TDD (Test Driven Development) y es el BDD (Behavior Driven Development).
+Una vez que usamos concientemente TDD vemos como la vida se nos simplifica, y a la vez nos damos cuenta de que pueden existir cosas mejores. Al estar tan metido en Scala en el último año me di cuenta de que existe algo mejor que el simple TDD (Test Driven Development): el BDD (Behavior Driven Development).
 
 ### BDD (Behavior Driven Development)
 
@@ -16,11 +16,11 @@ El BDD (más o menos: Desarrollo basado en el comportamiento del software) es si
 {% highlight python %}
 
     def test_factorial_de_uno_devuelve_uno(self):
-        self.assertEquals(factorial(1),1)
+        self.assertEquals(factorial(1), 1)
 
 {% endhighlight %}
 
-El problema del código anterior es que no es muy descriptivo. Primero para personas que no están involucradas con la programación (pensá cómo le explicarías a un programador de front-end o a un diseñador el código anterior). Segundo, para nosotros mismos. Cuando tenés mucho código, creeme que los test se pueden empezar a complejizar.
+El problema del código anterior es que no es muy descriptivo. Primero para personas que no están involucradas con la programación (pensá cómo le explicarías a un programador de front-end o a un diseñador el código anterior). Segundo, para nosotros mismos. Cuando tenés mucho código, creeme que los tests se pueden empezar a complejizar.
 
 En cambio, con BDD deberíamos tener algo así:
 
@@ -34,7 +34,7 @@ El BDD se hace de forma más simple en lenguajes que tengan un buen soporte para
 
 ### Lettuce
 
-Lettuce, simple y claramente, es una librería que nos ayuda a realizar BDD. O sea, describir el comportamiento de nuestro programa/aplicación primero y después escribir código que ayude a resolver esa problemática. No quiero seguir explayándome teóricamente, así que veamos un ejemplo.
+Lettuce, simple y claramente, es una librería que nos ayuda a realizar BDD en python. O sea, describir el comportamiento de nuestro programa/aplicación primero y después escribir código que ayude a resolver esa problemática. No quiero seguir explayándome teóricamente, así que veamos un ejemplo.
 
 #### Primera aplicación con Lettuce
 
@@ -96,7 +96,7 @@ Funcionalidad: Computar el factorial de un número
 
 Eso no parece código python. Sin embargo tiene unos comentarios raros al principio, lo que indica que no es un archivo común y corriente. Ese archivo es utilizado por Lettuce para entender el comportamiento de nuestra aplicación. Es por ahí donde debemos arrancar, primero escribiendo el comportamiento.
 
-### Usnado Lettuce
+### Usando Lettuce
 
 Al fin llegamos! Vamos a usar Lettuce después de tantas vueltas. Simplemente (parado en el directorio del proyecto), ejecutá la siguiente sentencia:
 
@@ -116,7 +116,7 @@ Como ves, aparecen algunos test como "undefined" y te da un ejemplo de cómo pod
 
 ### Escribiendo los tests
 
-Ya utilizamos el archivo .feature para describir el comportamiento. Ahora debemos escribir los test (sí, los tests primero) y la función `factorial` que realizará la tarea deseada. Como esto es BDD comenzamos escribiendo los tests y la función vamos a hacer que retorne -1 (podríamos haberla dejado sin implementar). En el archivo `steps.py` escribimos lo siguiente:
+Ya utilizamos el archivo `.feature` para describir el comportamiento. Ahora debemos escribir los test (sí, los tests primero) y la función `factorial` que realizará la tarea deseada. Como esto es BDD comenzamos escribiendo los tests y la función vamos a hacer que retorne -1 (podríamos haberla dejado sin implementar). En el archivo `steps.py` escribimos lo siguiente:
 
 {% highlight python %}
 
@@ -146,12 +146,23 @@ Si ejecutamos lettuce (`$ lettuce tests/`) la salida resultante será algo simil
 
 ![Salida de Lettuce](/img/posts/2012-05-01-testing-python-lettuce/lettuce-out-2.png)
 
-Como podés ver, el problema fue el tercer Test ("Debo ver el número 1"). Como todavía no tratamos de escribir nuestra función. La salida parece bastante clara, muchos rojos y verdes por todos lados. Es obvio que esto iba a fallar porque no implementamos la función (en realidad solo nos dispusimos a devolver "-1"). Vamos a ponerle algo de código. Para ello reemplazá tu función `fact` con esto:
+Como podés ver, el problema fue el tercer Test ("Debo ver el número 1"). Como todavía no tratamos de escribir nuestra función. La salida parece bastante clara, muchos rojos y verdes por todos lados. Es obvio que esto iba a fallar porque no implementamos la función (en realidad solo nos dispusimos a devolver "-1").
+
+Ahora vamos a tratar de programar usando BDD. La idea es (al igual que con TDD) ir ejecutando pequeños pasos que resuelvan la funcionalidad necesaria. Para hacerlo pensamos en el primer escenario de nuestro problema:
+
+> ¿Cuál es el factorial de 0?
+
+El factorial de 0 es 1, así que podemos directamente cambiar nuestra función factorial por esto:
 
 {% highlight python %}
 
-    fact = lambda n : 1
+	def factorial(n):
+		return -1
 
 {% endhighlight %}
 
 Volvé a correr tus tests y vas a ver cómo pasan tranquilamente:
+
+![Salida de Lettuce](/img/posts/2012-05-01-testing-python-lettuce/lettuce-out-3.png)
+
+Ahora bien, ¿cuál es el problema acá? Obviamente el escenario que planteamos no es el único con el que podemos econtrarnos.
