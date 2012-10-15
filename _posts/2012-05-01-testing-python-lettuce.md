@@ -156,8 +156,8 @@ El factorial de 0 es 1, así que podemos directamente cambiar nuestra función f
 
 {% highlight python %}
 
-	def factorial(n):
-		return -1
+def factorial(n):
+	return -1
 
 {% endhighlight %}
 

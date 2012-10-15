@@ -3,14 +3,14 @@ layout: post
 title: "HATEOAS: ¿qué y por qué?"
 category: rest
 tags: programacion rest api hateoas
-published: false
+
 ---
 
 Hace un tiempo di una charla en el PyDay de Córdoba sobre cómo construir [APIs REST usando Tastypie](http://www.slideshare.net/santiagobasulto1/restful-apis-con-tastypie). En uno de los slides menciono que una de las características de una API para ser considerada RESTful (que no es lo mismo que REST) debe ser HATEOAS.
 
 ### La R de REST es de "Recurso"
 
-Primero pensemos en qué es REST. REST es un "estilo de arquitectura". La clave de REST es que es "orientado a recursos" en vez de ser "orientado a acciones" como lo es, por ejemplo, SOA. Es decir, nosotros cuando construimos algo "REST" estamos concentrándonos en los recursos. Esto es fundamental, porque esto guía la construcción de la API.
+Primero pensemos en qué es REST. REST es un "estilo de arquitectura". La clave de REST es que es "orientado a recursos" en vez de ser "orientado a acciones" como lo es, por ejemplo, SOA. Es decir, nosotros cuando construimos algo "REST" estamos concentrándonos en los recursos (en las "cosas"). Esto es fundamental, porque esto guía la construcción de la API.
 
 Veamos un ejemplo para entender todo esto. Supongamos que estamos construyendo una API para nuestro sitio de e-commerce. Esta es la forma de pensar en acciones (no sería RESTful). Primero pongo la descripción y después el método:
 
@@ -30,7 +30,7 @@ O más fácil:
 
     POST /compra/?producto_id=20&cantidad=2
 
-En este caso nos concentramos en el producto. Lo interesante es que la acción apareció sola, como naturalmente. La acción en este caso es *crear* que se corresponde directamente con el verbo POST de HTTP. ¿Qué verbo HTTP se correspondía con la acción *comprar*? Ninguno, por eso tuvimos que elegir cualquiera (usamos POST, pero tranquilamente podría haber sido GET o PUT).
+En este caso nos concentramos en el producto. Lo interesante es que la acción apareció sola, de forma natural. La acción en este caso es *crear* que se corresponde directamente con el verbo POST de HTTP. ¿Qué verbo HTTP se correspondía con la acción *comprar*? Ninguno, por eso tuvimos que elegir cualquiera (usamos POST, pero tranquilamente podría haber sido GET o PUT).
 
 ### ¿Qué ventajas tiene la orientación a recursos?
 
@@ -107,4 +107,61 @@ Sí, muy importante. Además de escribir APIs, también soy un usuario de ellas 
 
 ¿No sería más fácil incluir esa URI dentro del recurso "persona" cuando hice la request a mi información? ¿Por qué debo andar adivinando o leyendo documentación para el simple hecho de conocer más información acerca del recurso que originalmente quiero ver (/santiago.basulto)?
 
-Otro ejemplo, la API de Mercadolibre.com.ar
+La idea sería que uno pueda "recorrer" o "navegar" la API sin andar adivinando o leyendo muchas cosas. Si la API devolviese lo siguiente, todo sería más fácil:
+
+    GET https://graph.facebook.com/santiago.basulto
+    {
+       "id": "605471098",
+       "name": "Santiago Basulto",
+       "first_name": "Santiago",
+       "last_name": "Basulto",
+       "link": "https://www.facebook.com/santiago.basulto",
+       "username": "santiago.basulto",
+       "location": {
+          "id": "116532501690915",
+          "name": "La Plata, Buenos Aires",
+		  "uri": "https://graph.facebook.com/116532501690915"
+       }
+    ...
+    }
+
+¿Ves el atributo **uri** dentro de **location**? Eso es HATEOAS. Proveer URIs (links, URLs, como quieras llamarlo) en los recursos asociados para que estos puedan ser consultados sin mayor esfuerzo.
+
+### Otro ejemplo, la API de MercadoLibre
+
+No es solamente Facebook el que muestra estas deficiencias. MercadoLibre también hace caso omiso a HATEOAS. Un ejemplo, esto devuelve una llamada al punto de entrada:
+
+	curl -XGET "https://api.mercadolibre.com/sites/MLA"
+	{
+		"id" : "MLA",
+		"name" : "Argentina",
+		"country_id": "AR",
+		"default_currency_id" : "ARS"
+		...
+	}
+
+El resultado contiene dos recursos asociados (**country** y **default\_currency**). Nos damos cuenta porque son IDs. ¿Ahora te pregunto, cómo harías para obtener la moneda (**default\_currency**)? Esta es la llamada que deberías hacer:
+
+	curl -XGET "https://api.mercadolibre.com/currencies/ARS"
+	{
+		"id": "ARS",
+		"description": "Peso argentino",
+		"symbol": "$",
+		"decimal_places": 2,
+	}
+
+Eso no es explícito, está implícito en la API y debe ser usada la documentación para conocerlo.
+
+Debo decir en favor de MercadoLibre que tienen una interfaz web para explorar la API muy buena y que cuenta con una especie de "HATEOAS" implícito. Además, la API es bastante intuitiva. Pero, no es HATEOAS.
+
+
+### HATEOAS en Tastypie, brevemente
+
+En algún momento debo escribir un post entero de Tastypie, pero por ahora te cuento que Tastypie por defecto soporta HATEOAS. Cada vez que relacionas recursos dentro de tu API esos recursos conocen inteligentemente como proveer las URIs para relacionarse, lo cual es muy útil.
+
+
+### Conclusión final
+
+REST es un estilo de arquitectura orientado a la simpleza. ¿Por qué utilizamos REST y no SOAP? Por la simplicidad de uso. SOAP es un protocolo excelente, muy robusto y extensible. Pero no es simple. Lamentablemente no tenemos tiempo para leer miles de lineas de WSDLs para recién poder comenzar a interactuar con la API. Eso es lo que nos provee REST. Tomás una URI y en 5 segundos usando `curl` o el mismo browser podés comenzar a recorrer la API y a interactuar con ella. No hace falta leer cientos de páginas de manuales (pienso en la API de AFIP automaticamente) para crear un post en Facebook, o ver un artículo en MercadoLibre.
+
+Entonces, si REST está orientado a la simplicidad, ¿por qué no tenemos como objetivo tratar de hacerlo lo más simple posible? Sinceramente no lo se. Tanto Facebook como MercadoLibre son empresas enormes, con desarrolladores brillantes, así que me queda solamente pensar que es una cuestión "cultural". Es nuestro deber como desarrolladores fomentar el buen uso de REST a través de HATEOAS. Espero que así sea.
