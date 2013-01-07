@@ -7,6 +7,10 @@ Mi nombre es Santiago, y este es mi blog donde escribo sobre programación, tecn
 
 Algunos posts destacados:
 
+_Startups:_
+
+* [Qué es un MVP. Minimum Viable Product](/startups/2013/01/06/lean-startup-mvp.html)
+
 _Entrevistas:_
 
 * [Angel "Java" Lopez](/entrevistas/2012/08/12/entrevista-angel-java-lopez.html)
