@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tecnocial
+title: "Presentando Tecnocial"
 category: tecnocial
 tags: tecnocial mvp lean startup proyecto
 ---
