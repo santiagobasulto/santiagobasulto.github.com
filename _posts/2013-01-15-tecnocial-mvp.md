@@ -5,33 +5,9 @@ category: tecnocial
 tags: tecnocial mvp lean startup proyecto
 ---
 
-<!--
-   Post layout:
-
-       - Catchy question
-       - Introducir la Necesidad
-       - ¿Qué es?
-          - Por qué solo electrónica?
-          - Qué cosas sociales?
-          - C2C?
-
-       - Vendedores
-
-       - ¿Por qué cuento esto?
-       - Pedido al público
-          - Conexión (handles)
-
--->
-
-<!-- Catchy question -->
-
 ¿Nunca te pasó que **querías comprarte una notebook** y no estabas segur@ de qué comprar? O tal vez querías un nuevo smartphone, pero **necesitabas saber si tal o cual aplicación andaba**. Tal vez estudias arquitectura y querés saber si esa PC corre la última versión del Autocad. Al contrario, ¿cuántas veces **ayudaste a un amigo**, conocido, familiar con una cuestión similar? ¿Cuántos **benchmarks, cuántos foros**, cuántas horas de Google usaste para elegir esa placa de video, esa tablet o unos auriculares?
 
-<!-- Necesidad -->
-
 Seguramente te podés identificar con alguna de las preguntas de arriba. Todos en algún momento pasamos por eso. La realidad es que **el comercio es una práctica social**, y el ecommerce es simplemente otro canal para hacer comercio. Necesitamos interactuar con otras personas cuando compramos, no somos islas. Nos encanta compartir lo que nos gusta, ayudar a otras personas, descubrir nuevas cosas y criticar lo que está mal.
-
-<!-- Qué es -->
 
 Es por eso que junto con dos amigos comenzamos un nuevo proyecto llamado **Tecnocial**. Tecnocial es un sitio de ecommerce C2C orientado 100% a productos de electrónica que además involucra características de red social (social ecommerce).
 
@@ -72,4 +48,4 @@ Podés contactarnos dejando un comentario o por twitter:
 
 * [@nachomartineza](https://twitter.com/nachomartineza)
 
-* [@santiagobasulto](https://twitter.com/santiagobasulto) <-- moi
+* [@santiagobasulto](https://twitter.com/santiagobasulto)
