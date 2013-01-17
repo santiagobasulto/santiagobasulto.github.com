@@ -40,9 +40,11 @@ C2C (Consumer-to-Consumer) significa Cliente a Cliente. En Tecnocial vas a poder
 
 #### ¿Por qué estoy contando todo esto?
 
-Fiel a la metodología de Customer Development (propuesta por genio de la existencia universal Steve Blank) escribo esto para escuchar la opinión de otras personas. Tecnocial lo vamos a construir entre todos. Nos va a ayudar mucho escuchar tu opinión, saber qué pensás. Es por eso que te pedimos que nos cuentes lo que se te venga a la mente. Juntos vamos a armar el mejor sitio de ecommerce.
+Fiel a la metodología de Customer Development (propuesta por Steve Blank) escribo esto para escuchar la opinión de otras personas. Tecnocial lo vamos a construir entre todos. Es por eso que te pedimos que nos dejes un comentario y nos cuentes qué pensás de todo esto. **Además, ya podés anotarte para ser uno de los primeros en probarlo: ([http://beta.tecnocial.com/](http://beta.tecnocial.com/)) **
 
-Podés contactarnos dejando un comentario o por twitter:
+Nos va a ayudar mucho escuchar tu opinión.
+
+También podés contactarnos por twitter:
 
 * [@martinzugnoni](https://twitter.com/martinzugnoni)
 
