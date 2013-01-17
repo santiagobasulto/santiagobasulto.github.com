@@ -11,15 +11,6 @@ Seguramente te podés identificar con alguna de las preguntas de arriba. Todos e
 
 Es por eso que junto con dos amigos comenzamos un nuevo proyecto llamado **Tecnocial**. Tecnocial es un sitio de ecommerce C2C orientado 100% a productos de electrónica que además involucra características de red social (social ecommerce).
 
-#### ¿Por qué solo electrónica?
-
-Además de la necesidad de hacer del ecommerce un ambiente más social, también nos damos cuenta que la calidad del ecommerce en general no es buena. **Hay un gran abismo entre ir a una tienda física a comprar un producto y su contraparte virtual**. Se podría decir que ese es nuestro mayor propósito: lograr que el ecommerce se vuelva tanto o mejor que el comercio físico. Sabemos que eso no es una tarea sencilla, que hay jugadores importantes en el sector y que el ecommerce es uno de los rubros que más capital involucra.
-
-Pero también sabemos que para poder realizar nuestra misión debemos concentrarnos. **Es muy difícil construir una gran experiencia de usuario si la cantidad de productos y los diferentes tipos varían tanto** ("desde escobas hasta ipads"). Esto no lo inventamos nosotros, es una necesidad que se da en el comercio físico también. Pensemos en cuántos supermercados venden "de todo": muy pocos y son los más grandes. De a poco se va creando la necesidad de enfocar para proveer mayor satisfacción a los compradores. Comenzamos con el "ramos generales" y ahora llegamos a tener Apple Stores. Garbarino se dio cuenta de esta necesidad y creó Compumundo. La experiencia de Amazon al comprar un libro es distinta a la de comprar un par de zapatillas o un kindle. Los ejemplos siguen indefinidamente.
-
-Por eso decidimos enfocarnos solo en electrónica. ¿Por qué?. Porque conocemos el rubro (somos 3 geeks/nerds/freaks), porque es la rama de mayor crecimiento y **porque es copado**. Aparte cuando se trata de electrónica suceden cosas interesantes. La gente, la comunidad es increíble. Todo el mundo está dispuesto a ayudar. Además nos volvemos bastante pasionales y se crea una gran conexión con los usuarios. ¿Quién no conoce un fanático Apple? ¿Uno de Android? Clapton agarró una Fender y nunca más la volivó a soltar. Toda esa suma de cosas nos lleva hacia la electrónica.
-
-
 #### ¿Social? WTF!
 
 Como comencé diciendo. **El comercio es social** ¿Qué cosas van a hacer de Tecnocial un sitio de ecommerce social?:
@@ -33,6 +24,14 @@ Como comencé diciendo. **El comercio es social** ¿Qué cosas van a hacer de Te
 * **Seguir marcas y productos**: Todos tenemos una marca o producto predilecto. Es por eso que queremos saber todo lo que acontece con esa marca o ese producto. Saber cuando hay algo nuevo, cuando haya alguna promoción, comentarios, noticias, etc. A su vez, eso también nos va a poder permitir identificarnos con otros usuarios que tengan los mismos gustos y seguir construyendo una experiencia social.
 
 y más...
+
+#### ¿Por qué solo electrónica?
+
+Además de la necesidad de hacer del ecommerce un ambiente más social, también nos damos cuenta que la calidad del ecommerce en general no es buena. **Hay un gran abismo entre ir a una tienda física a comprar un producto y su contraparte virtual**. Se podría decir que ese es nuestro mayor propósito: lograr que el ecommerce se vuelva tanto o mejor que el comercio físico. Sabemos que eso no es una tarea sencilla, que hay jugadores importantes en el sector y que el ecommerce es uno de los rubros que más capital involucra.
+
+Pero también sabemos que para poder realizar nuestra misión debemos concentrarnos. **Es muy difícil construir una gran experiencia de usuario si la cantidad de productos varía tanto** ("desde escobas hasta ipads"). Esto no lo inventamos nosotros, es una necesidad que se da en el comercio físico también. Pensemos en cuántos supermercados venden "de todo": muy pocos y son los más grandes. De a poco se va creando la necesidad de enfocar para proveer mayor satisfacción a los compradores. Comenzamos con el "ramos generales" y ahora llegamos a tener Apple Stores. Garbarino se dio cuenta de esta necesidad y creó Compumundo. La experiencia de Amazon al comprar un libro es distinta a la de comprar un par de zapatillas o un kindle. Los ejemplos siguen indefinidamente.
+
+Por eso decidimos enfocarnos solo en electrónica. ¿Por qué?. Porque conocemos el rubro (somos 3 geeks/nerds/freaks), porque es la rama de mayor crecimiento y **porque es copado**. Aparte cuando se trata de electrónica suceden cosas interesantes. La gente, la comunidad es increíble. Todo el mundo está dispuesto a ayudar. Además nos volvemos bastante pasionales y se crea una gran conexión con los usuarios. ¿Quién no conoce un fanático Apple? ¿Uno de Android? Clapton agarró una Fender y nunca más la volivó a soltar. Toda esa suma de cosas nos lleva hacia la electrónica.
 
 #### C2C
 
