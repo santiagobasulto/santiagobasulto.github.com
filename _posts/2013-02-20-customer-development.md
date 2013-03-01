@@ -22,8 +22,25 @@ Somos emprendedores (vos/tú y yo). Tenemos una forma distinta de ver la vida. E
 
 Además de ver el mundo a través de los ojos de las necesidades y las oportunidades, también nos especializamos en lo técnico. Yo soy programador, cualquier idea que se me cruce por la cabeza (siempre que sea software) puedo llevarla a cabo. Cualquiera. Tal vez involucre algunas horas más de programación, unos libros más, o un poco más de café. Lo técnico no es un problema. **Nos las ingeniamos.**
 
-Si bien estoy describiendo nuestras mejores aptitudes, también hay que reconocer que existen desventajas. Una gran desventaja es que **nos concentramos demasiado en el producto**. Vemos una primera necesidad y nos sumergimos de lleno en el producto que creemos la satisface. Sacamos nuestros mejores trucos, le dedicamos tiempo al detalle, lo damos vuelta una y otra vez. Lamentablemente esto en general leva al fracaso. Una empresa no es solamente un producto. Es un conjunto de componentes que tienen un solo objetivo. **El objetivo es satisfacer las necesidades (o solucionar los problemas) de nuestros clientes**. El problema es que al concentrarnos tanto por el producto, nos olvidamos de nuestros clientes. Nos olvidamos de sus verdaderas necesidades. ¡Incluso nos olvidamos de buscar en profundidad **quiénes son nuestros clientes!**.
+Si bien estoy describiendo nuestras mejores aptitudes, también hay que reconocer que existen desventajas. Una gran desventaja es que **nos concentramos demasiado en el producto**. Vemos una primera necesidad y nos sumergimos de lleno en el producto que creemos la satisface. Sacamos nuestros mejores trucos, le dedicamos tiempo al detalle, lo damos vuelta una y otra vez. Lamentablemente esto en general leva al fracaso. Una empresa no es solamente un producto. Es un conjunto de componentes que tienen un solo objetivo. **El objetivo es satisfacer las necesidades (o solucionar los problemas) de nuestros clientes**. El problema es que al concentrarnos tanto por el producto nos olvidamos de nuestros clientes. Nos olvidamos de sus verdaderas necesidades. ¡Incluso nos olvidamos de buscar en profundidad **quiénes son nuestros clientes!**.
 
-El objetivo de **Customer Development** es justamente ayudarnos a conocer las verdaderas necesidades de nuestros clientes, su problemática. Además de eso, también podemos descubrir "quién" es nuestro verdadero cliente.
+El objetivo de **Customer Development** es justamente ayudarnos a conocer las verdaderas necesidades de nuestros clientes, su problemática. Además de eso, también podemos descubrir "quién" es nuestro verdadero cliente. La realidad es que la mayoría de las startups no fallan porque tienen un mal producto. Fallan porque nunca encuentran la verdadera necesidad de sus clientes, o el segmento de clientes correcto, o el precio que están dispuesto a pagar.
 
-### Get out of the building
+Además de desarrollar nuestro producto, **debemos desarrollar nuestros clientes**.
+
+### Get the hell out of the building
+
+Steve siempre dice que **una startup no es una pequeña versión de una gran compañía o empresa**. Es decir, son cosas distintas y deben ser tratadas de forma distinta. Lo que funciona en las grandes empresas (planes de negocio, planes financieros, organigramas, etc) no siempre funciona en las startups. De hecho pueden llegar a condenarlas. ¿Cuál es la mayor diferencia? Que las grandes empresas ya saben lo que hacen. Ya saben quiénes son sus clientes, qué quieren, cómo lo quieren y cuándo. En una startup todas esas cosas son inciertas.
+
+> una startup no es una pequeña versión de una gran compañía
+
+Cuando comenzamos con nuestra startup partimos con una serie de hipótesis que debemos validar. Pensamos que descubrimos una necesidad o insatisfacción que se aplica a cierto tipo de clientes. Pero es nuestro deber comprobar que eso es realmente así. Es nuestros deber validar si esa necesidad realmente existe, si los clientes realmente existen, si están dispuestos a pagar por nuestra solución y muchas cosas más. Como dice Steve, **las startups están en modo búsqueda** (search-mode). A diferencia de las startups, las grandes compañías están en "modo ejecución".
+
+> Las startups están en search-mode
+
+En este momento debés preguntarte: ¿Cómo hago para validar todas esas hipótesis?. Fácil: **¡Salí del edificio!**. Andá a hablar con posibles clientes, preguntales qué es lo que necesitan, por qué usan un producto de la competencia, cuánto pagan, cuán importante es la necesidad esa. Todo lo que sea relevante para validar tus hipótesis. Hay que salir del edificio, dejar de lado lo técnico, nuestro producto y concentrarnos en los clientes.
+
+
+### Las cuatro fases de CustDev
+
+![Salida de Lettuce](/img/posts/2013-02-20-customer-development/fases-custdev.jpg)
