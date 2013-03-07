@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Breve repaso de mis alias en Git"
+title: "Alias útiles de Git"
 category: git
-tags: programacion git alias
+tags: programacion git alias shortcut
 ---
 
 Una de las filosofías de linux (heredada de Unix seguramente) ha sido eliminar tareas repetitivas.  Cada vez que nos encontramos haciendo lo mismo una y otra vez es necesario buscar alguna forma de eliminar la repetición y buscar la eficiencia. Una de esos casos se da con Git. A continuación te muestro un pedazo de mi `.gitconfig`:
