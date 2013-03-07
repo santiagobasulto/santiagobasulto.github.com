@@ -3,18 +3,23 @@ layout: post
 title: Comandos útiles de Git para el día a día
 category: programacion
 tags: git comandos branch mergeado merged
-published: false
 ---
 
-#### Borrar un branch remoto (http://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-in-github)
+#### Borrar un branch remoto
 
-As of Git v1.7.0, you can delete a remote branch using:
-git push origin --delete <branchName>
+Muchas veces borramos un branch en nuestro repositorio local y también queremos que se elimine en el repositorio remoto. Es muy fácil conseguirlo. Primero borramos el local:
 
-The above is syntactic sugar for
+    git branch -d <branchname>
 
-git push origin :<branchName>
-which was added in Git v1.5.0 "to delete a remote branch or a tag."
+Después lo borramos en el repo remoto:
+
+    git push origin :<branchname> # Los : (dos puntos) son IMPORTANTES!
+
+También podemos hacer:
+
+    git push origin --delete <branchname>
+
+Es una mejora sintáctica agregada a partir de la versión 1.7
 
 #### Ver si un branch fue mergeado en otro
 
@@ -75,6 +80,14 @@ Para mostrar todos los commits en un branch pero que no fueron traidos por merge
 **Importante**: Es importante que los branch mergeados no hayan sido Fast-Forward merges. Por las dudas, te recomiendo siempre agregar el flag `--no-ff` a `git-merge`.
 _Fuente:_ [http://stackoverflow.com/questions/8527139/showing-commits-made-directly-to-a-branch-ignoring-merges-in-git](http://stackoverflow.com/questions/8527139/showing-commits-made-directly-to-a-branch-ignoring-merges-in-git)
 
-#### Mostrar commits de un usr en particular
+#### Mostrar commits de un usuario en particular
+
+Como siempre, el comando que nos permite hacer esto es `git log`. Por ejemplo, para ver todos los commits de Juan Perez:
+
+    git log --author='Juan'
+
+Para mostrar commits de múltiples usuarios (Juan y Pedro por ejemplo):
+
+    git log --author="\(Juan\)\|\(Pedro\)"
 
 _Fuente:_ [http://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits](http://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits)
