@@ -3,6 +3,7 @@ layout: post
 title: "Customer Development"
 category: startups
 tags: startups lean mvp customer-development business-model
+published: false
 ---
 
 <!--
