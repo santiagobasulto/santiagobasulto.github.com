@@ -3,12 +3,14 @@ layout: post
 title: "Customer Development"
 category: startups
 tags: startups lean mvp customer-development business-model
+published: false
 ---
 
 <!--
  # Pequeña intro, steve blank, books
  # Objetivo de CD. Encontrar los clientes. No hay problemas técnicos.
  # Get out of the building: Hipótesis (guesses), ¿Business Model?
+ # CustDev y MVP. Otro objetivo. Llegar al MVP.
 
  # Books and further reading
 -->
@@ -21,11 +23,11 @@ Somos emprendedores (vos/tú y yo). Tenemos una forma distinta de ver la vida. E
 
 Además de ver el mundo a través de los ojos de las necesidades y las oportunidades, también nos especializamos en lo técnico. Yo soy programador, cualquier idea que se me cruce por la cabeza (siempre que sea software) puedo llevarla a cabo. Tal vez involucre algunas horas más de programación, unos libros más, o un poco más de café. Lo técnico no es un problema. **Nos las ingeniamos.**
 
-Si bien estoy describiendo nuestras mejores aptitudes, también hay que reconocer que existen desventajas. Una gran desventaja es que **nos concentramos demasiado en el producto**. Vemos una primera necesidad y nos sumergimos de lleno en el producto que creemos la satisface. Sacamos nuestros mejores trucos, le dedicamos tiempo al detalle, lo damos vuelta una y otra vez. Lamentablemente esto en general leva al fracaso. Una empresa no es solamente un producto. Es un conjunto de componentes que tienen un solo objetivo. **El objetivo es satisfacer las necesidades (o solucionar los problemas) de nuestros clientes**. El problema es que al concentrarnos tanto por el producto nos olvidamos de nuestros clientes. Nos olvidamos de sus verdaderas necesidades. ¡Incluso nos olvidamos de buscar en profundidad **quiénes son nuestros clientes!**.
+Si bien estoy describiendo nuestras mejores aptitudes, también hay que reconocer que existen desventajas. Una gran desventaja es que **nos concentramos demasiado en el producto**. Vemos una primera necesidad y nos sumergimos de lleno en el producto que creemos la satisface. Sacamos nuestros mejores trucos, le dedicamos tiempo al detalle, lo damos vuelta una y otra vez. Lamentablemente esto en general lleva al fracaso. Una empresa no es solamente un producto. Es un conjunto de componentes que tienen un solo objetivo. **El objetivo es satisfacer las necesidades (o solucionar los problemas) de nuestros clientes**. El problema es que al concentrarnos tanto por el producto nos olvidamos de nuestros clientes. Nos olvidamos de sus verdaderas necesidades. ¡Incluso nos olvidamos de buscar en profundidad **quiénes son nuestros clientes!**.
 
 El objetivo de **Customer Development** es justamente ayudarnos a conocer las verdaderas necesidades de nuestros clientes, su problemática. Además de eso, también podemos descubrir "quién" es nuestro verdadero cliente. La realidad es que la mayoría de las startups no fallan porque tienen un mal producto. Fallan porque nunca encuentran la verdadera necesidad de sus clientes, o el segmento de clientes correcto, o el precio que están dispuestos a pagar. Es decir, **las startups fallan porque no saben desarrollar sus clientes (y su mercado)**.
 
-Además de desarrollar nuestro producto, **debemos desarrollar nuestros clientes**.
+Además de desarrollar nuestro producto, **debemos desarrollar nuestros clientes**. Ese es el objetivo de **Customer Development**.
 
 ### Get the hell out of the building
 
@@ -39,9 +41,12 @@ Cuando comenzamos con nuestra startup **partimos con una serie de hipótesis que
 
 Es decir que como startup estamos buscando nuestro mercado. Estamos buscando los clientes, el segmento correcto, las verdaderas necesidades de ellos, etc. También buscamos otras cosas que no están relacionadas con nuestros clientes. Como por ejemplo socios estratégicos, competencia, canales de distribución, y más. Lo importante es entender que **una startup está buscando**, esa máxima debe guiar nuestro día a día.
 
+> ¡Salí del edificio! Validá tus hipótesis. Conocé tus clientes.
+
 En este momento debés preguntarte: ¿Cómo hago para validar todas esas hipótesis? Fácil: **¡Salí del edificio!**. Andá a hablar con posibles clientes, preguntales qué es lo que necesitan, por qué usan un producto de la competencia, cuánto pagan, cuán importante es esa necesidad. Todo lo que sea relevante para validar tus hipótesis. Hay que salir del edificio, dejar de lado lo técnico, nuestro producto y concentrarnos en los clientes. Esta es una frase que me gusta mucho para sintetizar todo esto:
+
 > En una startup no existen hechos adentro del edificio, solo existen opiniones.
 
 ### Las cuatro fases de CustDev
 
-<img src='/img/posts/2013-02-20-customer-development/fases-custdev.jpg' width=600px />
+![Las fases de Customer Development](/img/posts/2013-02-20-customer-development/fases-custdev.jpg)
