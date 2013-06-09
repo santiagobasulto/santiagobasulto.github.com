@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Programadores"
+title: "El buen programador"
 category: programacion
-tags: startups lean mvp customer-development business-model
-published: false
+tags: programacion lenguajes paradigmas programador
 ---
 
 En este post voy a dar mi opinión sobre qué es ser un "buen programador". Destaco que es mi opinión porque seguramente es subjetiva y arbitraria. Esto es algo que he pensado hace mucho y recién ahora me decidí en plasmarlo en bytes. Me encantaría escuchar otras opiniones, así que **te invito a dejar tus comentarios**.
 
-Hace bastante tiempo ya que programo y sobretodo que trabajo con otros programadores. Hay que sincerarse. Somos bichos raros. Es por eso que a lo largo de estos años he tratado de ser observador y entender qué hace a los "buenos programadores". También debo reconocer que yo estoy lejos de mi ideal de "buen programador", por lo que analizar estos conceptos me ayuda a darme cuenta en qué tengo que mejorar. No creo sinceramente que exista El Buen Programador, sino que estamos todos en la búsqueda de la mejora constante.
+Hace bastante tiempo que programo y sobre todo que trabajo con otros programadores. Hay que sincerarse. Somos bichos raros. Es por eso que a lo largo de estos años he tratado de ser observador y entender qué hace a los "buenos programadores". También debo reconocer que yo estoy lejos de mi ideal de "buen programador", por lo que analizar estos conceptos me ayuda a darme cuenta en qué tengo que mejorar. No creo sinceramente que exista El Buen Programador, sino que estamos todos en la búsqueda de la mejora constante.
 
 Dicho esto, y antes de comenzar a describir más, les presento la siguiente imagen, que puede resumir mis pensamientos. **La pirámide del buen programador**:
 
@@ -18,9 +17,9 @@ Para mi estas son las cosas que tiene que cultivar un buen programador. Lo más 
 
 ### Formación personal, disciplina, introspección.
 
-Podríamos decir que estas no son habilidades que solo debe cultivar el buen programador, sino "la buena persona". **Esto nos constituye como personas**. Es importante como seres humanos formarnos a nosotros mismos, cualquiera sea el camino que elijamos. Esto nos hará un "buen programador", un "buen amigo", un "buen padre", etc. Los valores que cada uno posee son los que terminaran dando forma a su posterior actividad profesional. Conozco buenos programadores que son increíblemente soberbios, lo cual hace que poca gente quiera trabajar con ellos. Hay programadores que no son tan buenos técnicamente pero son grandes personas, lo que hace que otros programadores se acerquen y se sientan a gusto al compartir su tiempo y conocimiento, lo que termina siendo bueno para ellos.
+Podríamos decir que estas no son habilidades que solo debe cultivar el buen programador, sino "la buena persona". **Esto nos constituye como personas**. Es importante como seres humanos formarnos a nosotros mismos, cualquiera sea el camino que elijamos. Esto nos hará un "buen programador", un "buen amigo", un "buen padre", etc. Los valores que cada uno posee son los que terminarán dando forma a su posterior actividad profesional. Conozco buenos programadores que son increíblemente soberbios, lo cual hace que poca gente quiera trabajar con ellos. Hay programadores que no son tan buenos técnicamente pero son grandes personas, lo que hace que otros programadores se acerquen y se sientan a gusto al compartir su tiempo y conocimiento, lo que termina siendo beneficioso para su vida profesional.
 
-Más allá del tema de la persona y sus valores, tema que me excede notablemente, se encuentra la "disciplina" del programador. La programación es una profesion complicada. Tiene algo de ciencia y tiene algo de arte. El arte se manifiesta en esos momentos en que hay que hacer algo y uno no sabe por dónde arrancar. Se nos ocurren mil formas distintas de encararlo, pero todo es una experimentación. Sumado a eso, puede ser que esa particular tarea no nos agrade mucho. Y por si fuera poco, la mayoría de los programadores tenemos "horarios flexibles". No tenemos un jefe que nos diga "¿presentaste el formulario en tribunales?", "¿cuántos clientes visitaste?". En esos momentos es donde hay que hacerse fuerte y ponerse metas y objetivos, y terminar de alguna manera nuestro trabajo. Mucho se ha escrito acerca de esto. Incluso se han creado "técnicas" para optimizar el tiempo. Pero sigue siendo un problema recurrente.
+Más allá del tema de la persona y sus valores, tema que me excede notablemente, se encuentra la "disciplina" del programador. La programación es una profesion complicada. Tiene algo de ciencia y tiene algo de arte. El arte se manifiesta en esos momentos en que hay que hacer algo y uno no sabe por dónde arrancar. Se nos ocurren mil formas distintas de encararlo, pero todo es una experimentación. Sumado a eso, puede ser que esa particular tarea no nos agrade mucho. Y por si fuera poco, la mayoría de los programadores tenemos "horarios flexibles". No tenemos un jefe que nos diga "¿presentaste el formulario en tribunales?", "¿cuántos clientes visitaste?". En esos momentos es donde hay que hacerse fuerte y ponerse metas y objetivos, y terminar de alguna manera nuestro trabajo. Mucho se ha escrito acerca de esto. Incluso se han creado "técnicas" para optimizar el tiempo. Pero sigue siendo un problema recurrente. El buen programador conoce estas dificultades, conoce sus propias limitaciones y sabe cómo atacarlo.
 
 Por último menciono *introspección*. Esto también tiene que ver con el "ser" de cada persona, por eso no voy a extenderme en mi análisis. A mi juicio, lo importante para una persona es sentarse de vez en cuando a solas, en silencio y hacerse las preguntas básicas:
 
@@ -30,7 +29,7 @@ Por último menciono *introspección*. Esto también tiene que ver con el "ser" 
 
 ### Habilidades sociales y de comunicación
 
-El punto anterior es prácticamente filosófico. Es difícil verlo en un programador día a día. Este en cambio se observa a diario. Si bien no está en la base de mi pirámide, es muy importante.
+El punto anterior es prácticamente filosófico. Es difícil verlo en un programador día a día. En cambio, el rasgo social se observa a diario. Si bien no está en la base de mi pirámide, es muy importante.
 
 Tener la capacidad de comunicarse con otros es fundamental. Y por comunicarse no digo: "convencer al otro programador que mi lenguaje es mejor o que mi editor es mejor" o "convencer al PM que tal o cuál feature quede afuera del release". Me refiero a lograr una profunda comunicación con el otro. Entender a las personas que nos rodean, conectar, lograr empatía.
 
@@ -40,9 +39,9 @@ La moraleja de todo esto sería analizar uno mismo qué habilidades sociales tie
 
 ### Math interlude: Abstracciones y patrones
 
-Programar consiste en resolver problemas. Para resolver problemas es fundamental la capacidad de abstracción. Si bien en el título dice "math", no estoy diciendo que le encajemos una transformada de Laplace a un algorítmo de ordenamiento. La idea es **desarrollar con el tiempo la capacidad de abstraerce y levantar el nivel de nuestro pensamiento**. Lamentablemente esto es muy difícil de explicar. Los programadores con cierta experiencia van entender a lo que me refiero. Es una cuestión de práctica. Nuestro cerebro se acostumbra a los patrones.
+Programar consiste en resolver problemas. Para resolver problemas es fundamental la capacidad de abstracción. Si bien en el título dice "math", no estoy diciendo que le encajemos una Transformada de Laplace a un algoritmo de ordenamiento. La idea es **desarrollar con el tiempo la capacidad de abstraerce y levantar el nivel de nuestro pensamiento**. Lamentablemente esto es muy difícil de explicar. Los programadores con cierta experiencia van entender a lo que me refiero. Es una cuestión de práctica. Nuestro cerebro se acostumbra a los patrones.
 
-Cosas para desarrollar más esto que he encontrado interesantes:
+Algunas cosas interesantes para desarrollar este punto pueden ser:
 
 * Problemas matemáticos en general.
 * Problemas de programación en general (Google: "programming puzzles". Los de Facebook están geniales.)
@@ -64,9 +63,9 @@ Es clave para un programador ir hacia el centro, hacia las bases de lo que hace.
 Cosas importantes para aprender que considero básicas:
 
 * **Arquitectura de Hardware**.
-* **Sistemas operativos**. Funcionamiento en general. "¿Qué pasa cuando abro un programa? De principio a fin."
-* **Concurrencia**. (Fundamental en la nueva era multicore)
-* **Redes** (infraestructura y programación). Protocolos básicos.
+* **Sistemas operativos**. Funcionamiento en general. "¿Qué pasa cuando ejecuto un proceso? De principio a fin."
+* **Concurrencia**. En general. (Fundamental en la nueva era multicore)
+* **Redes** Infraestructura y programación. Protocolos básicos.
 * **Paradigmas**: funcional, objetos, prototipos, etc.
 * **Datos**, datos y más datos! Almacenamiento, modificación, transformación. (Si no me creen pregúntenle a Linus)
 
@@ -98,4 +97,4 @@ La forma de conocer a fondo un lenguaje es usándolo mucho, leyendo código de g
 
 ### Conclusión
 
-A propósito dejo afuera otros conceptos como la curiosidad, el "amor" por la programación, la paciencia, el amor por la competencia, etc. Ya que sería demasiado subjetivo (más aún). Para cerrar todo esto y darle una conclusión, me parece que lo más importante es siempre buscar la autosuperación. **Happy coding.**
+A propósito dejo afuera otros conceptos como la curiosidad, el "amor" por la programación, la paciencia, el pasión por la competencia, etc, ya que sería demasiado subjetivo (más aún). Son cosas difíciles de analizar. Para cerrar todo esto y darle una conclusión, me parece que lo más importante es siempre buscar la autosuperación. **Happy coding.**
