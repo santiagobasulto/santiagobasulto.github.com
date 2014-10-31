@@ -1,6 +1,6 @@
-.hero--profile{
+.big-image-header{
 
-    background-image: url("https://d262ilb51hltx0.cloudfront.net/fit/c/2000/1600/gradv/29/81/30/0*co3WNWToKDMK_6y4.jpeg");
+    background-image: url("../images/headers/typewriter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -8,7 +8,7 @@
     padding-top: 250px;
     margin-bottom: 250px;
 }
-.hero--profile .hero-avatar {
+.big-image-header .avatar-container {
     margin-top: -60px;
     margin-bottom: 20px;
     display: inline-block;
@@ -22,12 +22,6 @@
     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
     top:250px;
     position: relative;
-}
-.avatar--large {
-    /*
-width: 120px;
-height: 120px;
-*/
 }
 .avatar {
 display: block;
@@ -52,7 +46,7 @@ border-radius: 100%;
 background: #f0f0f0;
 }
 
-.hero-title {
+.header-avatar-title {
 letter-spacing: -0.02em;
 font-weight: 700;
 font-style: normal;
@@ -65,7 +59,7 @@ outline: 0;
 word-break: break-word;
 }
 
-.hero-description {
+.header-avatar-description {
 color: rgba(0,0,0,0.6);
 font-size: 18px;
 outline: 0;
@@ -74,16 +68,17 @@ letter-spacing: -0.02em;
 }
 
 /* Menu */
-.menu {
+.profile-menues {
 margin-bottom: 30px;
 }
 
+/*
 menu, ol, ul {
 padding: 0;
 list-style: none;
 list-style-image: none;
 }
-
+*/
 .menu-item {
 display: inline-block;
 vertical-align: top;
@@ -94,7 +89,7 @@ display: list-item;
 text-align: -webkit-match-parent;
 }
 
-.menu-item--icons, .menu-item:not(.menu-item--icons)>.button--chromeless {
+.menu-item-with-icons, .menu-item:not(.menu-item-with-icons)>.avatar-profile-button {
 padding: 10px 20px 5px;
 color: rgba(0,0,0,0.8);
 color: #000;
@@ -102,7 +97,7 @@ font-size: 24px;
 border-right: 1px solid rgba(0,0,0,0.05);
 }
 
-.button--link, .button--chromeless {
+.button--link, .avatar-profile-button {
     color: #000;
 border-radius: 0;
 box-shadow: none;
@@ -123,11 +118,11 @@ font-size: 11px;
 letter-spacing: 2px;
 }
 
-.blockGroup--card.blockGroup--inset>.blockDivider {
+/*.blockGroup--card.blockGroup--inset>.blockDivider {
 margin-bottom: 30px;
-}
+}*/
 
-.blockDivider-name {
+.block-horizontal-divider-name {
 display: inline-block;
 border: 1px solid rgba(0,0,0,0.44);
 background: #fff;
@@ -138,14 +133,14 @@ letter-spacing: .3em;
 color: rgba(0,0,0,0.6);
 position: relative;
 }
-.blockDivider {
+.block-horizontal-divider {
 position: relative;
 text-align: center;
 line-height: 1.2;
 margin-bottom: 30px;
 }
 
-.blockDivider:before {
+.block-horizontal-divider:before {
 content: "";
 display: block;
 position: absolute;
