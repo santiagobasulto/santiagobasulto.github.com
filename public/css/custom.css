@@ -1,0 +1,155 @@
+.hero--profile{
+
+    background-image: url("https://d262ilb51hltx0.cloudfront.net/fit/c/2000/1600/gradv/29/81/30/0*co3WNWToKDMK_6y4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    padding-top: 250px;
+    margin-bottom: 250px;
+}
+.hero--profile .hero-avatar {
+    margin-top: -60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    z-index: 500;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    top:250px;
+    position: relative;
+}
+.avatar--large {
+    /*
+width: 120px;
+height: 120px;
+*/
+}
+.avatar {
+display: block;
+background-position: center;
+margin: 0 auto;
+overflow: hidden;
+/*
+width: 65px;
+height: 65px;
+*/
+line-height: 0;
+background-size: cover;
+border-radius: 100%;
+}
+
+.avatar-image {
+height: 100%;
+}
+.avatar-image {
+width: 100%;
+border-radius: 100%;
+background: #f0f0f0;
+}
+
+.hero-title {
+letter-spacing: -0.02em;
+font-weight: 700;
+font-style: normal;
+font-size: 50px;
+letter-spacing: -0.04em;
+line-height: 1;
+color: rgba(0,0,0,0.8);
+margin-bottom: 8px;
+outline: 0;
+word-break: break-word;
+}
+
+.hero-description {
+color: rgba(0,0,0,0.6);
+font-size: 18px;
+outline: 0;
+word-break: break-word;
+letter-spacing: -0.02em;
+}
+
+/* Menu */
+.menu {
+margin-bottom: 30px;
+}
+
+menu, ol, ul {
+padding: 0;
+list-style: none;
+list-style-image: none;
+}
+
+.menu-item {
+display: inline-block;
+vertical-align: top;
+}
+
+li {
+display: list-item;
+text-align: -webkit-match-parent;
+}
+
+.menu-item--icons, .menu-item:not(.menu-item--icons)>.button--chromeless {
+padding: 10px 20px 5px;
+color: rgba(0,0,0,0.8);
+color: #000;
+font-size: 24px;
+border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.button--link, .button--chromeless {
+    color: #000;
+border-radius: 0;
+box-shadow: none;
+background: rgba(0,0,0,0);
+height: auto;
+line-height: inherit;
+border-width: 0;
+padding: 0;
+vertical-align: baseline;
+white-space: normal;
+}
+
+.menu-label {
+color: rgba(0,0,0,0.6);
+text-transform: uppercase;
+display: block;
+font-size: 11px;
+letter-spacing: 2px;
+}
+
+.blockGroup--card.blockGroup--inset>.blockDivider {
+margin-bottom: 30px;
+}
+
+.blockDivider-name {
+display: inline-block;
+border: 1px solid rgba(0,0,0,0.44);
+background: #fff;
+text-transform: uppercase;
+font-size: 12px;
+padding: 3px 8px 2px 12px;
+letter-spacing: .3em;
+color: rgba(0,0,0,0.6);
+position: relative;
+}
+.blockDivider {
+position: relative;
+text-align: center;
+line-height: 1.2;
+margin-bottom: 30px;
+}
+
+.blockDivider:before {
+content: "";
+display: block;
+position: absolute;
+top: 12px;
+width: 100%;
+border-top: 1px solid rgba(0,0,0,0.15);
+}

@@ -1,11 +1,68 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-{% include head_title.html %}
-<div class="bd">
-    <div class="entry-content">
-    {{ content }}
-    </div><!-- entry-content -->
-</div><!-- bd -->
+  {% include head.html %}
 
+  <body>
+      <div class='hero hero--profile layoutSingleColumn'>
+        <div class="hero-avatar js-profileAvatar">
+          <span class="avatar avatar--large">
+            <img src="{{ site.baseurl }}img/profile.jpg" class="avatar-image avatar-image--large imagePicker-target" title="Santiago Basulto">
+          </span>
+
+        </div>
+        <div style="position: relative; top: 200px;">
+          <h1 class="hero-title">Santiago Basulto</h1>
+          <p class="hero-description">rmotr.com // athlete.com</p>
+          <ul class="menu">
+            <li class="menu-item menu-item--icons">
+              <small class="menu-label">Twitter</small>
+              <a class="button button--chromeless" target="_blank" href="//twitter.com/ev"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="menu-item menu-item--icons">
+              <small class="menu-label">Facebook</small>
+              <a class="button button--chromeless" target="_blank" href="//twitter.com/ev"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="menu-item menu-item--icons">
+              <small class="menu-label">Github</small>
+              <a class="button button--chromeless" target="_blank" href="//twitter.com/ev"><i class="fa fa-github"></i></a>
+            </li>
+
+            </ul>
+        </div>
+
+      </div>
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="blockDivider "><a class="blockDivider-name" href="/@ev/recommended">Most recommended</a></div>
+    <div class="wrap">
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
