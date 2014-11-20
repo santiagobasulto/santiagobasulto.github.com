@@ -4,41 +4,20 @@
   {% include head.html %}
 
   <body>
-      <div class='big-image-header'>
-        <div class="avatar-container">
-          <span class="avatar">
-            <img src="{{ site.baseurl }}img/profile.jpg" class="avatar-image" title="Santiago Basulto">
-          </span>
-
-        </div>
-        <div style="position: relative; top: 200px;">
-          <h1 class="header-avatar-title">Santiago Basulto</h1>
-          <p class="header-avatar-description">rmotr.com // athlete.com</p>
-          <ul class="profile-menues">
-            <li class="menu-item menu-item-with-icons">
-              <small class="menu-label">Twitter</small>
-              <a class="button avatar-profile-button" target="_blank" href="//twitter.com/ev"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="menu-item menu-item-with-icons">
-              <small class="menu-label">Facebook</small>
-              <a class="button avatar-profile-button" target="_blank" href="//twitter.com/ev"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="menu-item menu-item-with-icons">
-              <small class="menu-label">Github</small>
-              <a class="button avatar-profile-button" target="_blank" href="//twitter.com/ev"><i class="fa fa-github"></i></a>
-            </li>
-
-            </ul>
-        </div>
-
-      </div>
 
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="block-horizontal-divider "><a class="block-horizontal-divider-name" href="/@ev/recommended">Most recommended</a></div>
     <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
 
       <div class="container content">
         {{ content }}

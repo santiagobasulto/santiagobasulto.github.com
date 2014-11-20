@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+      <div class='big-image-header'>
+        <div class="avatar-container">
+          <span class="avatar">
+            <img src="{{ site.baseurl }}img/profile.jpg" class="avatar-image" title="Santiago Basulto">
+          </span>
+
+        </div>
+        <div style="position: relative; top: 200px;">
+          <h1 class="header-avatar-title">Santiago Basulto</h1>
+          <p class="header-avatar-description">rmotr.com // athlete.com</p>
+          <ul class="profile-menues">
+            <li class="menu-item menu-item-with-icons">
+              <small class="menu-label">Twitter</small>
+              <a class="button avatar-profile-button" target="_blank" href="https://twitter.com/santiagobasulto"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="menu-item menu-item-with-icons">
+              <small class="menu-label">Facebook</small>
+              <a class="button avatar-profile-button" target="_blank" href="https://www.facebook.com/santiago.basulto"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="menu-item menu-item-with-icons">
+              <small class="menu-label">Github</small>
+              <a class="button avatar-profile-button" target="_blank" href="https://github.com/santiagobasulto"><i class="fa fa-github"></i></a>
+            </li>
+
+            </ul>
+        </div>
+
+      </div>
+
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="block-horizontal-divider "><a class="block-horizontal-divider-name" href="{{ site.baseurl }}archivo">Archivo</a></div>
+    <div class="wrap">
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
