@@ -8,4 +8,4 @@ Thanks to Tom Preston-Werner for making this possible!
 
 ## LICENSE ##
 
-For now, feel free to re-use code, but the images/posts are Copyright Santiago Basulto, so ask permission!   
+For now, feel free to re-use code, but the images/posts are Copyright Santiago Basulto, so ask permission!

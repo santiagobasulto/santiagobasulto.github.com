@@ -1,6 +1,6 @@
 ---
-layout: home-default
-title: "Todos los posts"
+layout: page
+title: Archive
 ---
 
 <ul class="post-list">
