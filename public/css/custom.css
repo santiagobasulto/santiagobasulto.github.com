@@ -152,3 +152,12 @@ h1, h2, h3, h4{
     font-family: "PT Serif", Georgia, "Times New Roman", serif;
     font-weight: 600;
 }
+
+.sidebar p.bullet{
+    margin: 0px;
+    text-align: justify;
+}
+
+.sidebar-item h4{
+    color: #fff;
+}
