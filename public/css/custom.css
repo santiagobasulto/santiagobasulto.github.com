@@ -1,5 +1,4 @@
 .big-image-header{
-
     background-image: url("../images/headers/typewriter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,4 +146,9 @@ position: absolute;
 top: 12px;
 width: 100%;
 border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+h1, h2, h3, h4{
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    font-weight: 600;
 }
