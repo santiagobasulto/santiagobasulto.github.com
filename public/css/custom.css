@@ -165,3 +165,10 @@ h1, h2, h3, h4{
 .post, .post p{
     text-align: justify;
 }
+
+.post .post-title{
+    text-align: center;
+}
+.post .post-date{
+    text-align: right;
+}
