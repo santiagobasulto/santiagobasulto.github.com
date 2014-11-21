@@ -162,6 +162,6 @@ h1, h2, h3, h4{
     color: #fff;
 }
 
-.post p{
+.post, .post p{
     text-align: justify;
 }
